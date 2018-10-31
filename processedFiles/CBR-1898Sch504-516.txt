@@ -1,64 +1,310 @@
-A Product Customization Module
-Based on Adaptation Operators for CBR
-Systems in E-Commerce Environments
-
-Sascha Schmitt, Rainer Maximini, Gerhard Landeck, and Jцrg Hohwiller
-
-University of Kaiserslautern, Department of Computer Science
-Artificial Intelligence — Knowledge-Based Systems Group
-67653 Kaiserslautern, Germany
-{sschmitt,maximini,landeck,hohwille}@informatik.uni—kl.de
-
-
-
-
-Abstract. Existing electronic shops based on CBR technology allow
-customers to search for adequate products by only specifying the attributes 
-for the products in a fuzzy way. Unfortunately, most electronic
-shops do not further support customers after the retrieval step. However,
-especially configurable products could be customized at this stage. Based
-on the approach of interactive adaptation operators, we present a flexible 
-system architecture for a customization module which can be easily
-integrated in electronic shops. Our approach of a modular adaptation
-concept is implemented and currently tested within the ESPRIT project
+Product
+Customization
+Module
+Based
+Adaptation
+Operators
+Systems
+E-Commerce
+Environments
+Sascha
+Schmitt
+Rainer
+Maximini
+Gerhard
+Landeck
+Jцrg
+Hohwiller
+University
+Kaiserslautern
+Department
+Computer
+Science
+Artificial
+Intelligence
+Knowledge-Based
+Systems
+Group
+67653
+Kaiserslautern
+Germany
+sschmitt,maximini,landeck,hohwille}@informatik.uni—kl.de
+Abstract
+Existing
+electronic
+shops
+based
+technology
+allow
+customers
+search
+adequate
+products
+only
+specifying
+attributes
+products
+fuzzy
+Unfortunately
+most
+electronic
+shops
+further
+support
+customers
+after
+retrieval
+step
+However
+especially
+configurable
+products
+could
+customized
+this
+stage
+Based
+approach
+interactive
+adaptation
+operators
+present
+flexible
+system
+architecture
+customization
+module
+which
+easily
+integrated
+electronic
+shops
+approach
+modular
+adaptation
+concept
+implemented
+currently
+tested
+within
+ESPRIT
+project
 WEBSELL
 References
-
-1.	A. Aamodt, E. Plaza: Case—Based Reasoning: Foundational Issues, Methodological
-Variations, and System Approaches, in AICOM, Vol. 7, No. 1, 1994, pp. 39-59.
-2.	R. Bergmann, W. Wilke, I. Vollrath, S. Wess: Integrating General Knowledge with
-Object-Oriented Case Representation and Reasoning. In M. Lenz, H.-D. Burkhard
-(Eds.) 4th German Workshop: Case-Based Reasoning - System Development and
-Evaluation. 1996.
-3.	J. Carbonell: Derivational Analogy and Its Role in Problem Solving, Proceedings
-of the 3rd Annual National Conference on Artificial Intelligence AAAI-83, 1983,
-Morgan Kaufmann Publishers.
-4.	P. Cunningham, D. Finn, S. Slattery: Knowledge Engineering Requirements in
-Derivational Analogy, In Wess et al. (Eds.), Topics in Case-Based Reasoning Lecture 
-Notes in AI, Springer, 1994.
-5.	K. Hanney, M. Keane, B. Smyth, P. Cunningham: Systems, tasks and adaptation
-knowledge: revealing some revealing dependencies, In A. Aamodt, M. Veloso (Eds.)
-Case-Based Reasoning Research and Development. pp.461-470. Springer, 1995.
-6.	Jola Product Catalog, Jola Spezialschalter K. Mattil & Co. Lambrecht (Pfalz),
-Germany, 1999.
-7.	S. Schmitt, R. Bergmann: Product Customization in an Electronic Commerce Environment 
-using Adaptation Operators. 1999. Proceedings of the 7th German Workshop 
-on Case-Based Reasoning, GWCBR’99, in Wьrzburg, March 3—5, 1999.
-8.	I. Volirath: Reuse of Complex Electronic Designs: Requirements Analysis for a CBR
-Application. In B. Smyth, P. Cunningham (Eds.): Advances in Case-Based Reasoning, 
-Proceedings of the 4th European Workshop on CBR, EWCBR’98, Dublin.
-pp. 136-147. Springer, 1998.
-
-9.	S. Schulz: GBR-Works — A State-of-the-Art Shell for Case-Based Application
-Building. Proceedings of the 7th German Workshop on Case-Based Reasoning,
-GWCBR’99, Wьrzburg, Germany, March 3-5, 1999.
-10.	tec:inno GmbH. Das orenge Framework. Internal Report, 1999.
-11.	A. Voss: Towards a methodology for case adaptation. In W. Wahlster (Ed.): 12th
-European Conference on Artificial Intelligence, ECAI’96. pp. 147-151. John Wiley
-and Sons, 1996.
-12.	W. Wilke, R. Bergmann: Techniques and Knowledge Used for Adaptation During
-Case—Based Problem Solving. In 11th International Conference on Industrial and
-Engineering Applications of Artificial Intelligence and Expert Systems, IEA-98,
-1998.
-13.	W. Wilke: Knowledge Management for Intelligent Sales Support in Electronic Commerce, 
-Dissertation, University of Kaiserslautern, Germany, 1998.
+Aamodt
+Plaza
+Case—Based
+Reasoning
+Foundational
+Issues
+Methodological
+Variations
+System
+Approaches
+AICOM
+1994
+39-59
+Bergmann
+Wilke
+Vollrath
+Wess
+Integrating
+General
+Knowledge
+with
+Object-Oriented
+Case
+Representation
+Reasoning
+Lenz
+H.-D
+Burkhard
+German
+Workshop
+Case-Based
+Reasoning
+System
+Development
+Evaluation
+1996
+Carbonell
+Derivational
+Analogy
+Role
+Problem
+Solving
+Proceedings
+Annual
+National
+Conference
+Artificial
+Intelligence
+AAAI-83
+1983
+Morgan
+Kaufmann
+Publishers
+Cunningham
+Finn
+Slattery
+Knowledge
+Engineering
+Requirements
+Derivational
+Analogy
+Wess
+Topics
+Case-Based
+Reasoning
+Lecture
+Notes
+Springer
+1994
+Hanney
+Keane
+Smyth
+Cunningham
+Systems
+tasks
+adaptation
+knowledge
+revealing
+some
+revealing
+dependencies
+Aamodt
+Veloso
+Case-Based
+Reasoning
+Research
+Development
+pp.461-470
+Springer
+1995
+Jola
+Product
+Catalog
+Jola
+Spezialschalter
+Mattil
+Lambrecht
+Pfalz
+Germany
+1999
+Schmitt
+Bergmann
+Product
+Customization
+Electronic
+Commerce
+Environment
+using
+Adaptation
+Operators
+1999
+Proceedings
+German
+Workshop
+Case-Based
+Reasoning
+GWCBR’99
+Wьrzburg
+March
+1999
+Volirath
+Reuse
+Complex
+Electronic
+Designs
+Requirements
+Analysis
+Application
+Smyth
+Cunningham
+Advances
+Case-Based
+Reasoning
+Proceedings
+European
+Workshop
+EWCBR’98
+Dublin
+136-147
+Springer
+1998
+Schulz
+GBR-Works
+State-of-the-Art
+Shell
+Case-Based
+Application
+Building
+Proceedings
+German
+Workshop
+Case-Based
+Reasoning
+GWCBR’99
+Wьrzburg
+Germany
+March
+1999
+tec:inno
+GmbH
+orenge
+Framework
+Internal
+Report
+1999
+Voss
+Towards
+methodology
+case
+adaptation
+Wahlster
+12th
+European
+Conference
+Artificial
+Intelligence
+ECAI’96
+147-151
+John
+Wiley
+Sons
+1996
+Wilke
+Bergmann
+Techniques
+Knowledge
+Used
+Adaptation
+During
+Case—Based
+Problem
+Solving
+11th
+International
+Conference
+Industrial
+Engineering
+Applications
+Artificial
+Intelligence
+Expert
+Systems
+IEA-98
+1998
+Wilke
+Knowledge
+Management
+Intelligent
+Sales
+Support
+Electronic
+Commerce
+Dissertation
+University
+Kaiserslautern
+Germany
+1998

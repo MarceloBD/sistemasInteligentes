@@ -1,52 +1,275 @@
-InfoFrax: CBR in Fused Cast Refractory Manufacture
-
-Deepak Khemani1, Radhika B. Selvamani1, Ananda Rabi Dhar1, and S.M. Michael2
-
-1 A.I. & D.B. Lab, Dept. of Computer Science & Engineering I.I.T.Madras, India
+InfoFrax
+Fused
+Cast
+Refractory
+Manufacture
+Deepak
+Khemani1
+Radhika
+Selvamani1
+Ananda
+Rabi
+Dhar1
+Michael2
+Dept
+Computer
+Science
+Engineering
+I.I.T.Madras
+India
 khemani@iitm.ac.in
-{bradhika, anandat}@peacock.iitm.ernet.in
-2Carborundum Universal Limited, Madras, India (CUMI)
+bradhika
+anandat}@peacock.iitm.ernet.in
+2Carborundum
+Universal
+Limited
+Madras
+India
+CUMI
 mikesm@ho.cumi.co.in
-
-
-
-Abstract. This paper describes a CBR application in manufacturing industry, a
-domain where CBR has by and large proved its applicability and success. The
-paper details a thorough understanding of the field of fused cast manufacturing
-basically seen from the perspective of glass furnace, where quality of glass
-produced is straightaway related to the refractory blocks used in furnace linings.
-The applicability of CBR paradigm is revisited in the present context. The CBR
-process needed is conceptualized and designed. The paper describes the
-evolution of the system beginning with tackling hurdles of knowledge
-acquisition, a number of pitfalls in the prototype phase, to final implementation
-of InfoFrax, the CBR system specially devised for the project. It gives an
-overall description of the architecture and usage. The paper also reports the
-immediate response to the software in form of direct user feedback,
-expectations from the existing system, and some future work already underway
-in the project.
+Abstract
+This
+paper
+describes
+application
+manufacturing
+industry
+domain
+where
+large
+proved
+applicability
+success
+paper
+details
+thorough
+understanding
+field
+fused
+cast
+manufacturing
+basically
+seen
+from
+perspective
+glass
+furnace
+where
+quality
+glass
+produced
+straightaway
+related
+refractory
+blocks
+used
+furnace
+linings
+applicability
+paradigm
+revisited
+present
+context
+process
+needed
+conceptualized
+designed
+paper
+describes
+evolution
+system
+beginning
+with
+tackling
+hurdles
+knowledge
+acquisition
+number
+pitfalls
+prototype
+phase
+final
+implementation
+InfoFrax
+system
+specially
+devised
+project
+gives
+overall
+description
+architecture
+usage
+paper
+also
+reports
+immediate
+response
+software
+form
+direct
+user
+feedback
+expectations
+from
+existing
+system
+some
+future
+work
+already
+underway
+project
 References
-
-[1]	Balaraman, V. and Vattam, S., “Finding Common Ground in Case-Based Systems”, In
-Proceedings of the International Conference KBCS-98, India. Sasikumar, M.: Durgesh
-Rao.: Ravi Prakash, P.: and Ramani, S. eds. 1998. pp. 25-37
-[2]	Balaraman, V., Chakraborti, S., and Vattam, S., “Using CBR Inexact Search for
-Intelligent Retrieval of Data”, In Proceedings of the International Conference KBCS 2000
-India. Sasikumar, M.: Durgesh Rao and Ravi Prakash, P. eds. 2000. pp. 119-130
-[3] Efraim Turban, Expert Systems and Applied Artificial Intelligence, Macmillan, 1992.
-[4]	Hennessey, D. and Hinkle, D. “Applying Case-based Reasoning to Autoclave Loading”,
-IEEE Expert, Vol. 7, Num. 5. 1992. pp. 21-26
-[5]	Mike Nelson, “Recent glass refractory application trends”, Glass Industry Development
-International 2002, pp.55 - 57
-[6]	Michael, S. M., and Khemani, D., “Knowledge Management in Manufacturing
-Technology”, In Proceedings of the International Conference on Enterprise Information
-System 2002,Ciudad Real, Spain, Vol. I, pp. 506-512
-[7]	Michael, S. M., and Khemani, D., “An Industrial Application of CBR in Manufacturing to
-Reduce Rejections”, In Proceedings of the Fifteenth International Florida Artificial
-Intelligence Research Society Conference, Florida, USA, 2002, pp. 116-120
-[8] Rissland, E.: Kolodner, J.: and Waltz, D. 1989 Case based Reasoning. Proceedings of the
-DARPA Case-based Reasoning Workshop, 1-13, San Mateo, CA, Morgan Kauffman
-[9]	Sivakumar A., & Ravi Kannan. In Justification of the Project, Internal memo, CUMI
-Chennai, 1998.
-[10]	Srinivasan, R. “Refractories for Glass Tank Furnaces: Exudation Behavior of AZS
-Refractories”, Society of Glass Technology, Indian Section, Quarterly Newsletter, 1,
-Vol.V Number 2. 1998.
+Balaraman
+Vattam
+“Finding
+Common
+Ground
+Case-Based
+Systems”
+Proceedings
+International
+Conference
+KBCS-98
+India
+Sasikumar
+Durgesh
+Ravi
+Prakash
+Ramani
+1998
+25-37
+Balaraman
+Chakraborti
+Vattam
+“Using
+Inexact
+Search
+Intelligent
+Retrieval
+Data”
+Proceedings
+International
+Conference
+KBCS
+2000
+India
+Sasikumar
+Durgesh
+Ravi
+Prakash
+2000
+119-130
+Efraim
+Turban
+Expert
+Systems
+Applied
+Artificial
+Intelligence
+Macmillan
+1992
+Hennessey
+Hinkle
+“Applying
+Case-based
+Reasoning
+Autoclave
+Loading”
+IEEE
+Expert
+1992
+21-26
+Mike
+Nelson
+“Recent
+glass
+refractory
+application
+trends”
+Glass
+Industry
+Development
+International
+2002
+pp.55
+Michael
+Khemani
+“Knowledge
+Management
+Manufacturing
+Technology”
+Proceedings
+International
+Conference
+Enterprise
+Information
+System
+2002,Ciudad
+Real
+Spain
+506-512
+Michael
+Khemani
+Industrial
+Application
+Manufacturing
+Reduce
+Rejections”
+Proceedings
+Fifteenth
+International
+Florida
+Artificial
+Intelligence
+Research
+Society
+Conference
+Florida
+2002
+116-120
+Rissland
+Kolodner
+Waltz
+1989
+Case
+based
+Reasoning
+Proceedings
+DARPA
+Case-based
+Reasoning
+Workshop
+1-13
+Mateo
+Morgan
+Kauffman
+Sivakumar
+Ravi
+Kannan
+Justification
+Project
+Internal
+memo
+CUMI
+Chennai
+1998
+Srinivasan
+“Refractories
+Glass
+Tank
+Furnaces
+Exudation
+Behavior
+Refractories”
+Society
+Glass
+Technology
+Indian
+Section
+Quarterly
+Newsletter
+Vol.V
+Number
+1998

@@ -1,59 +1,316 @@
-Fault Management in Computer Networks Using
-Case-Based Reasoning: DUMBO System
-
-Cristina Meichiors and Liane M. R. Tarouco
-
-PPGC, Universidade Federal do Rio Grande do Sul
-Av. Bento Gonзalves, 9500. Bloco IV. Porto Alegre, Brazil
-cristina@inf.ufrgs.br, liane@penta.ufrgs.br
-
-
-
-Abstract. Nowadays, the complexity involved in computer network fault
-management demands a great amount of information about the involved
-technologies and their associated problems. Besides, Trouble Ticket Systems
-have been used to store the occurred problems, actuating as an historical
-memory of the network. Thus, a correct approach to consolidate the network
-historic memory is the development of an expert system that takes in account
-the knowledge accumulated in the Trouble Ticket Systems to propose
-solutions for an average problem. This work presents a system that uses Case-Based 
-Reasoning paradigm applied to a Trouble Ticket System to suggest
-solutions for a new problem occurred. This system aims to aid diagnosis and
-resolution stages of network management problems. Typical problems of this
-domain, the proposed solution and results reached with the developed
-prototype are described.
+Fault
+Management
+Computer
+Networks
+Using
+Case-Based
+Reasoning
+DUMBO
+System
+Cristina
+Meichiors
+Liane
+Tarouco
+PPGC
+Universidade
+Federal
+Grande
+Bento
+Gonзalves
+9500
+Bloco
+Porto
+Alegre
+Brazil
+cristina@inf.ufrgs.br
+liane@penta.ufrgs.br
+Abstract
+Nowadays
+complexity
+involved
+computer
+network
+fault
+management
+demands
+great
+amount
+information
+about
+involved
+technologies
+their
+associated
+problems
+Besides
+Trouble
+Ticket
+Systems
+have
+been
+used
+store
+occurred
+problems
+actuating
+historical
+memory
+network
+Thus
+correct
+approach
+consolidate
+network
+historic
+memory
+development
+expert
+system
+that
+takes
+account
+knowledge
+accumulated
+Trouble
+Ticket
+Systems
+propose
+solutions
+average
+problem
+This
+work
+presents
+system
+that
+uses
+Case-Based
+Reasoning
+paradigm
+applied
+Trouble
+Ticket
+System
+suggest
+solutions
+problem
+occurred
+This
+system
+aims
+diagnosis
+resolution
+stages
+network
+management
+problems
+Typical
+problems
+this
+domain
+proposed
+solution
+results
+reached
+with
+developed
+prototype
+described
 References
-
-1.	Aamodt, A., Plaza, E.: Case-Based Reasoning: Foundational Issues, Methodological
-Variations, and System Approaches. Al Communications, Vol.7(1) (1994) 39-59
-2.	Brandau, R., Lemmon, A., Lafond, C.: Experience with Extended Episodes: Cases with
-Complex Temporal Structure In: Bareiss, E. R. (ed.): Proceedings DARPA Workshop on
-Case-Based Reasoning. Morgan Kaufmann, San Francisco (1991)
-3.	Cisco Systems, Inc: Internetwork Troubleshooting Guide. 1997. Reference available in
-http://www.cisco.com/univercd/cc/t d/doc/cisintwk/itg_vl/index.htm.
-4.	Dreo, G., Valta, R.: Using master tickets as a storage for problem-solving expertise. In:
-Sethi, A., Raynaud, Y., Faure-Vincent, F. (eds.) Proceedings of Integrated Network
-Management IV Chapman & Hall, London (1995) 328-340
-5.	Goyal, S.: Knowledge technologies for evolving networks. In: Krishnan, I.,
-Zimmer, W. (eds.): Proceedings of Integrated Network Management II. Elsevier Science,
-Amsterdam (1991)
-6.	Hunt, C.: TCP/IP Network Administration. 2nd edn. O’Reilly, Sebastopol (1998)
-7.	Kolodner, J.: Case-Based Reasoning. Morgan Kaufmann, San Mateo (1993)
-8.	Lewis, L.: A Case-Based Reasoning Approach to the Management of Faults in
-Communications Networks. Conference on Computer Communications. IEEE, San
-Francisco, Vol 3 (1993) 1422-1429
-9.	Lewis, L.: Managing Computer Networks: A Case-Based Reasoning Approach. Artech
-House, Norwood (1995)
-10.	Melchiors, C.: Raciocнnio Baseado em Casos Aplicado ao Gerenciamento de Faihas
-em Redes de Computadores. Master of Science Thesis PGCC/UFRGS (1999). In
-evaluation stage.
-11.	Miller, M.: Troubleshooting TCP/IP. M&T Books, New York (1996)
-12.	Simoudis, E.: Using Case-Based Retrieval for Customer Technical Support. IEEE Expert,
-Vol.7(5) (1992) 7-12
-13.	Stefik, M.: Introduction to Knowledge Systems. Morgan Kaufmann, San Francisco (1995)
-14.	Tarouco, L. et al.: Urn ambiente para gerenciamento integrado e cooperativo. In:
-Proceedings of Workshop sobre Administraзгo e Integraзгo de Sistemas. UFC, Fortaleza
-(1996) 235-246
-15. Udupa, D.: Network Management Systems Essentials. McGraw-Hill, New York (1996)
-16.	Watson, I.: Applying Case-Based Reasoning: Techniques for Enterprise Systems. Morgan
-Kaufmann, San Francisco (1997)
+Aamodt
+Plaza
+Case-Based
+Reasoning
+Foundational
+Issues
+Methodological
+Variations
+System
+Approaches
+Communications
+Vol.7(1
+1994
+39-59
+Brandau
+Lemmon
+Lafond
+Experience
+with
+Extended
+Episodes
+Cases
+with
+Complex
+Temporal
+Structure
+Bareiss
+Proceedings
+DARPA
+Workshop
+Case-Based
+Reasoning
+Morgan
+Kaufmann
+Francisco
+1991
+Cisco
+Systems
+Internetwork
+Troubleshooting
+Guide
+1997
+Reference
+available
+http://www.cisco.com/univercd/cc/t
+d/doc/cisintwk/itg_vl/index.htm
+Dreo
+Valta
+Using
+master
+tickets
+storage
+problem-solving
+expertise
+Sethi
+Raynaud
+Faure-Vincent
+Proceedings
+Integrated
+Network
+Management
+Chapman
+Hall
+London
+1995
+328-340
+Goyal
+Knowledge
+technologies
+evolving
+networks
+Krishnan
+Zimmer
+Proceedings
+Integrated
+Network
+Management
+Elsevier
+Science
+Amsterdam
+1991
+Hunt
+TCP/IP
+Network
+Administration
+O’Reilly
+Sebastopol
+1998
+Kolodner
+Case-Based
+Reasoning
+Morgan
+Kaufmann
+Mateo
+1993
+Lewis
+Case-Based
+Reasoning
+Approach
+Management
+Faults
+Communications
+Networks
+Conference
+Computer
+Communications
+IEEE
+Francisco
+1993
+1422-1429
+Lewis
+Managing
+Computer
+Networks
+Case-Based
+Reasoning
+Approach
+Artech
+House
+Norwood
+1995
+Melchiors
+Raciocнnio
+Baseado
+Casos
+Aplicado
+Gerenciamento
+Faihas
+Redes
+Computadores
+Master
+Science
+Thesis
+PGCC/UFRGS
+1999
+evaluation
+stage
+Miller
+Troubleshooting
+TCP/IP
+Books
+York
+1996
+Simoudis
+Using
+Case-Based
+Retrieval
+Customer
+Technical
+Support
+IEEE
+Expert
+Vol.7(5
+1992
+7-12
+Stefik
+Introduction
+Knowledge
+Systems
+Morgan
+Kaufmann
+Francisco
+1995
+Tarouco
+ambiente
+para
+gerenciamento
+integrado
+cooperativo
+Proceedings
+Workshop
+sobre
+Administraзгo
+Integraзгo
+Sistemas
+Fortaleza
+1996
+235-246
+Udupa
+Network
+Management
+Systems
+Essentials
+McGraw-Hill
+York
+1996
+Watson
+Applying
+Case-Based
+Reasoning
+Techniques
+Enterprise
+Systems
+Morgan
+Kaufmann
+Francisco
+1997

@@ -1,58 +1,297 @@
-Poetry Generation in COLIBRI
-
-Belйn Diaz-Agudo, Pablo Gervбs, and Pedro A. Gonzбlez-Calero
-
-Dep. Sistemas Informбticos y Programaciуn
-Universidad Complutense de Madrid, Spain
-{belend, pgervas, pedro}@sip.ucm.es
-
-
-
-Abstract. CBROnto is an ontology that incorporates common Case-Based 
-Reasoning (CBR) terminology and serves as a domain-independ-
-ent framework to design CBR applications. It is the core of COLIBRI,
-an environment to assist during the design of knowledge intensive CBR
-systems that combine cases with various knowledge types and reasoning
-methods. CBROnto captures knowledge about CBR tasks and methods,
-and aims to unify case specific and general domain knowledge representational 
-needs. CBROnto specifies a modelling framework to describe
-reusable CBR Problem Solving Methods based on the CBR tasks they
-solve. This paper describes CBROnto’s main ideas and exemplifies them
-with an application to generate Spanish poetry versions of texts provided
-by the user.
+Poetry
+Generation
+COLIBRI
+Belйn
+Diaz-Agudo
+Pablo
+Gervбs
+Pedro
+Gonzбlez-Calero
+Sistemas
+Informбticos
+Programaciуn
+Universidad
+Complutense
+Madrid
+Spain
+belend
+pgervas
+pedro}@sip.ucm.es
+Abstract
+CBROnto
+ontology
+that
+incorporates
+common
+Case-Based
+Reasoning
+terminology
+serves
+domain-independ
+framework
+design
+applications
+core
+COLIBRI
+environment
+assist
+during
+design
+knowledge
+intensive
+systems
+that
+combine
+cases
+with
+various
+knowledge
+types
+reasoning
+methods
+CBROnto
+captures
+knowledge
+about
+tasks
+methods
+aims
+unify
+case
+specific
+general
+domain
+knowledge
+representational
+needs
+CBROnto
+specifies
+modelling
+framework
+describe
+reusable
+Problem
+Solving
+Methods
+based
+tasks
+they
+solve
+This
+paper
+describes
+CBROnto’s
+main
+ideas
+exemplifies
+them
+with
+application
+generate
+Spanish
+poetry
+versions
+texts
+provided
+user
 References
-
-1.	A. Aamodt and E. Plaza. Case-based reasoning: Foundational issues, methodological 
-variations, and system approaches. AI Communications, 7(1), 1994.
-2.	B. Dнaz-Agudo and P. A. Gonzбlez-Calero. An architecture for knowledge intensive
-CBR systems. In E. Blanzieri and L. Portinale, editors, Advances in Case-Based
-Reasoning — (EWCBR ‘00). Springer-Verlag, Berlin Heidelberg New York, 2000.
-3.	B. Dнaz-Agudo and P. A. Gonzбlez-Calero. Classification based retrieval using
-formal concept analysis. In Procs. of the (ICCBR 2001). Springer-Verlag, 2001.
-4.	B. Dнaz-Agudo and P. A. Gonzбlez-Calero. A declarative similarity framework for
-knowledge intensive CBR. In Procs. of the (ICCBR 2001). Springer-Verlag, 2001.
-5.	B. Dнaz-Agudo and P. A. Gonzбlez-Calero. CBROnto: a task/method ontology for
-CBR. In CBR Track (FLAIRS) accepted to be published. 2002.
-6.	P. Gervбs. Wasp: Evaluation of different strategies for the automatic generation of
-spanish verse. In Proceedings of the AISB-00 Symposium on Creative & Cultural
-Aspects of AI, pages 93—100, 2000.
-7.	P. Gervбs. An expert system for the composition of formal Spanish poetry. Journal
-of Knowledge-Based Systems, 14(3—4):181—188, 2001.
-8.	P. A. Gonzбlez-Calero, M. Gуmez-Albarrбn, and B. Dнaz-Agudo. A substitution-based 
-adaptation model. In Challenges for Case-Based Reasoning - Proc. of the
-ICCBR ‘99 Workshops. University of Kaiserslautern, 1999.
-9.	D. B. Leake, A. Kinley, and D. C. Wilson. Acquiring case adaptation knowledge: A
-hybrid approach. In Proceedings of the thirteenth National Conference on Artificial
-Intelligence, pages 684—689, Menlo Park, CA, 1996. AAAI Press.
-10.	R. Mac Gregor and R. Bates. The loom knowledge representation language. ISI
-Reprint Series ISI/RS-87-188, University of Southern California, 1987.
-11.	J. McDermott. Preliminary steps towards a taxonomy of problem-solving methods. 
-In S. Marcus, editor, Automating Knowledge Acquisition for Knowledge-Based
-Systems. Kluwer Academic Publishers, Boston, 1988.
-12.	T. Schreiber, B. J. Wielinga, J. M. Akkermans, W. V. de Velde, and R. de Hoog.
-CommonKADS: A comprehensive methodology for KBS development. IEEE Ex-
-pert, 9(6), 1994.
- 13. L. Steels. Components of expertise. AI Magazine, 11(2):29—49, 1990.
-14.	G. Van Heijst, A. Schreiber, and B. Wielinga. Using explicit ontologies in knowledge 
-based systems development. International Journal of Human and Computer
-Studies, 46(2/3), 1997.
+Aamodt
+Plaza
+Case-based
+reasoning
+Foundational
+issues
+methodological
+variations
+system
+approaches
+Communications
+1994
+Dнaz-Agudo
+Gonzбlez-Calero
+architecture
+knowledge
+intensive
+systems
+Blanzieri
+Portinale
+editors
+Advances
+Case-Based
+Reasoning
+EWCBR
+Springer-Verlag
+Berlin
+Heidelberg
+York
+2000
+Dнaz-Agudo
+Gonzбlez-Calero
+Classification
+based
+retrieval
+using
+formal
+concept
+analysis
+Procs
+ICCBR
+2001
+Springer-Verlag
+2001
+Dнaz-Agudo
+Gonzбlez-Calero
+declarative
+similarity
+framework
+knowledge
+intensive
+Procs
+ICCBR
+2001
+Springer-Verlag
+2001
+Dнaz-Agudo
+Gonzбlez-Calero
+CBROnto
+task/method
+ontology
+Track
+FLAIRS
+accepted
+published
+2002
+Gervбs
+Wasp
+Evaluation
+different
+strategies
+automatic
+generation
+spanish
+verse
+Proceedings
+AISB-00
+Symposium
+Creative
+Cultural
+Aspects
+pages
+93—100
+2000
+Gervбs
+expert
+system
+composition
+formal
+Spanish
+poetry
+Journal
+Knowledge-Based
+Systems
+14(3—4):181—188
+2001
+Gonzбlez-Calero
+Gуmez-Albarrбn
+Dнaz-Agudo
+substitution-based
+adaptation
+model
+Challenges
+Case-Based
+Reasoning
+Proc
+ICCBR
+Workshops
+University
+Kaiserslautern
+1999
+Leake
+Kinley
+Wilson
+Acquiring
+case
+adaptation
+knowledge
+hybrid
+approach
+Proceedings
+thirteenth
+National
+Conference
+Artificial
+Intelligence
+pages
+684—689
+Menlo
+Park
+1996
+AAAI
+Press
+Gregor
+Bates
+loom
+knowledge
+representation
+language
+Reprint
+Series
+ISI/RS-87-188
+University
+Southern
+California
+1987
+McDermott
+Preliminary
+steps
+towards
+taxonomy
+problem-solving
+methods
+Marcus
+editor
+Automating
+Knowledge
+Acquisition
+Knowledge-Based
+Systems
+Kluwer
+Academic
+Publishers
+Boston
+1988
+Schreiber
+Wielinga
+Akkermans
+Velde
+Hoog
+CommonKADS
+comprehensive
+methodology
+development
+IEEE
+pert
+1994
+Steels
+Components
+expertise
+Magazine
+11(2):29—49
+1990
+Heijst
+Schreiber
+Wielinga
+Using
+explicit
+ontologies
+knowledge
+based
+systems
+development
+International
+Journal
+Human
+Computer
+Studies
+46(2/3
+1997

@@ -1,52 +1,256 @@
-Generalization under Implication by
+Generalization
+under
+Implication
 A-Subsumption
-
-Zdravko Markov
-
-Faculty of Mathematics and Informatics, University of Sofia,
-5 James Bouchier Str., 1164 Sofia, Bulgaria
-Email: markov@fmi.uni-sofia.bg
-
-
-Abstract. The present paper discusses a generalization operator based
-on the A-subsumption ordering between Horn clauses introduced by the
-author elsewhere. It has been shown that A-subsumption is strictly stronger
-than O-subsumption and a local equivalent of generalized subsumption.
-With some language restrictions it is decidable and possesses some other
-useful properties. Most importantly it allows defining a non-trivial upper
-bound of the A-subsumption generalization hierarchy without the use of
-negative examples. Consequently this allows solving a version of the ILP
-task with positive-only examples.
+Zdravko
+Markov
+Faculty
+Mathematics
+Informatics
+University
+Sofia
+James
+Bouchier
+1164
+Sofia
+Bulgaria
+Email
+markov@fmi.uni-sofia.bg
+Abstract
+present
+paper
+discusses
+generalization
+operator
+based
+A-subsumption
+ordering
+between
+Horn
+clauses
+introduced
+author
+elsewhere
+been
+shown
+that
+A-subsumption
+strictly
+stronger
+than
+O-subsumption
+local
+equivalent
+generalized
+subsumption
+With
+some
+language
+restrictions
+decidable
+possesses
+some
+other
+useful
+properties
+Most
+importantly
+allows
+defining
+non-trivial
+upper
+bound
+A-subsumption
+generalization
+hierarchy
+without
+negative
+examples
+Consequently
+this
+allows
+solving
+version
+task
+with
+positive-only
+examples
 References
-1.	Bergadano, F., Gunetti, D. Functional Inductive Logic Programming with Queries
-to the User, In: Proceedings of ECML-93, LNAI, Vol.667, Springer-Verlag, 1993,
-323-328.
-2.	Buntine, W. Generalized Subsumption and Its Application to Induction and Redundancy, 
-Artificial Intelligence, Vol. 36 (1988), 149-176.
-3.	Conklin, D., Witten, I. Complexity-Based Induction, Machine Learning, Vol. 16
-(3), 1994, 203-225.
-4.	Markov, Z. A-Subsumption and Its Application to Learning from Positive-only
-Examples, in: Muggleton (ed.), Proceedings of ILP-96, Selected Papers, Lecture
-Notes in Artificial Intelligence, Vol.1314, Springer, 1997, 377-396.
-5.	Muggleton, S. Inverse Entailment and Progol, New Generation Computing, 13
-(1995), 245-286.
-6.	Muggleton, S. Learning from positive data, in: Proceedings of ILP-96, Department
-of Computer and Systems Science, Stockholm University/Royal Institute of Technology, 
-Report No.96-019, August, 1996, 225-244.
-7.	Muggleton, S. Stochastic Logic Programs, in: L.De Raedt (ed.), Advances in Inductive 
-Logic Programming, 105 Press, 1996, 254-264.
-8.	Quinlan, J.R. Learning logical definitions from relations, Machine Learning, 5
-(1990), 239-266.
-9.	Quinlan, J.R. Learning First-Order Definitions of Functions, Journal of Artificial
-Intelligence Research, 5 (1996), 139-161.
-10.	Shapiro, E.Y. Algorithmic program debugging, MIT Press, 1983.
-11.	Stahl, I., Tausend, B., Wirth, R. Two Methods for Improving Inductive Logic Programming 
-Systems, in: Proceedings of ECML-93, LNAI, Vol.667, Springer-Verlag,
-1993, 41-55.
-12.	Van der Laag, P.R.J. An Analysis of Refinement operators in Inductive Logic Programming, 
-Ph.D. thesis, Tinbergen Institute Research Series, No.102, Amsterdam,
-1996.
-13.	Zelle, J., Thompson, C., Califf, M., Mooney, R. Inducing Logic Programs without
-Explicit Negative Examples, in: Luc De Raedt (Ed.), Proceedings of ILP-95, Scientific 
-report, Department of Computer Science, K.U. Leuven, September, 1995,
-403-416.
+Bergadano
+Gunetti
+Functional
+Inductive
+Logic
+Programming
+with
+Queries
+User
+Proceedings
+ECML-93
+LNAI
+Vol.667
+Springer-Verlag
+1993
+323-328
+Buntine
+Generalized
+Subsumption
+Application
+Induction
+Redundancy
+Artificial
+Intelligence
+1988
+149-176
+Conklin
+Witten
+Complexity-Based
+Induction
+Machine
+Learning
+1994
+203-225
+Markov
+A-Subsumption
+Application
+Learning
+from
+Positive-only
+Examples
+Muggleton
+Proceedings
+ILP-96
+Selected
+Papers
+Lecture
+Notes
+Artificial
+Intelligence
+Vol.1314
+Springer
+1997
+377-396
+Muggleton
+Inverse
+Entailment
+Progol
+Generation
+Computing
+1995
+245-286
+Muggleton
+Learning
+from
+positive
+data
+Proceedings
+ILP-96
+Department
+Computer
+Systems
+Science
+Stockholm
+University/Royal
+Institute
+Technology
+Report
+No.96-019
+August
+1996
+225-244
+Muggleton
+Stochastic
+Logic
+Programs
+L.De
+Raedt
+Advances
+Inductive
+Logic
+Programming
+Press
+1996
+254-264
+Quinlan
+Learning
+logical
+definitions
+from
+relations
+Machine
+Learning
+1990
+239-266
+Quinlan
+Learning
+First-Order
+Definitions
+Functions
+Journal
+Artificial
+Intelligence
+Research
+1996
+139-161
+Shapiro
+Algorithmic
+program
+debugging
+Press
+1983
+Stahl
+Tausend
+Wirth
+Methods
+Improving
+Inductive
+Logic
+Programming
+Systems
+Proceedings
+ECML-93
+LNAI
+Vol.667
+Springer-Verlag
+1993
+41-55
+Laag
+P.R.J
+Analysis
+Refinement
+operators
+Inductive
+Logic
+Programming
+Ph.D
+thesis
+Tinbergen
+Institute
+Research
+Series
+No.102
+Amsterdam
+1996
+Zelle
+Thompson
+Califf
+Mooney
+Inducing
+Logic
+Programs
+without
+Explicit
+Negative
+Examples
+Raedt
+Proceedings
+ILP-95
+Scientific
+report
+Department
+Computer
+Science
+Leuven
+September
+1995
+403-416

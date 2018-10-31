@@ -1,45 +1,214 @@
-Multilingual Information Retrieval based on
-Parallel Texts from the Web
-
-Jian­Yun Nie, Michel Simard, George Foster
-Laboratoire RALI,
-Dйpartement d'Informatique et Recherche opйrationnelle,
-Universitй de Montrйal
-C.P. 6128, succursale Centre­ville
-Montrйal, Quйbec, H3C 3J7 Canada
-{nie, simardm, foster}@iro.umontreal.ca
-
-Abstract. In this paper, we describe our approach in CLEF Cross­ Language IR
-(CLIR) tasks. In our experiments, we used statistical translation models for
-query translation. Some of the models are trained on parallel web pages that are
-automatically mined from the Web. Others are trained from bilingual
-dictionaries and lexical databases. These models are combined in query
-translation. Our goal in this series of experiments is to test if the parallel web
-pages can be used effectively to translate queries in multilingual IR. In
-particular, we compare models trained on Web documents with models that also
-combine other resources such as dictionaries. Our results show that the models
-trained on the parallel web pages can achieve reasonable CLIR performance.
-However, combining models effectively is a difficult task, and single models
-still yield better results.
-
-
+Multilingual
+Information
+Retrieval
+based
+Parallel
+Texts
+from
+Jian­Yun
+Michel
+Simard
+George
+Foster
+Laboratoire
+RALI
+Dйpartement
+d'Informatique
+Recherche
+opйrationnelle
+Universitй
+Montrйal
+6128
+succursale
+Centre­ville
+Montrйal
+Quйbec
+Canada
+simardm
+foster}@iro.umontreal.ca
+Abstract
+this
+paper
+describe
+approach
+CLEF
+Cross­
+Language
+CLIR
+tasks
+experiments
+used
+statistical
+translation
+models
+query
+translation
+Some
+models
+trained
+parallel
+pages
+that
+automatically
+mined
+from
+Others
+trained
+from
+bilingual
+dictionaries
+lexical
+databases
+These
+models
+combined
+query
+translation
+goal
+this
+series
+experiments
+test
+parallel
+pages
+used
+effectively
+translate
+queries
+multilingual
+particular
+compare
+models
+trained
+documents
+with
+models
+that
+also
+combine
+other
+resources
+such
+dictionaries
+results
+show
+that
+models
+trained
+parallel
+pages
+achieve
+reasonable
+CLIR
+performance
+However
+combining
+models
+effectively
+difficult
+task
+single
+models
+still
+yield
+better
+results
 References
-1. Brown, P. F., Pietra, S. A. D., Pietra, V. D. J., Mercer, R. L.: The mathematics of machine
-translation: Parameter estimation. Computational Linguistics, vol. 19 (1993) pp. 263­312
-2. Chen, J.: Parallel Text Mining for Cross­Language Information Retrieval using a
-Statistical Translation Model, M.Sc. Thesis, DIRO, University of Montreal (2000)
-3. W. A. Gale, K.W. Church, A program for aligning sentences in bilingual corpora,
-Computational Linguistics, 19:1 (1993) 75­102
-4. Franz, M., McCarley, J.S., Roukos, S.: Ad hoc and multilingual information retrieval at
-IBM, The Seventh Text Retrieval Conference (TREC­7), NIST SP 500­242 (1998) 157­
-168
-5. J.Y. Nie, P. Isabelle, M. Simard, R. Durand, Cross­language information retrieval based
-on parallel texts and automatic mining of parallel texts from the Web, ACM­SIGIR
-conference, Berkeley, CA (1999) 74­81
-6. M. Simard, G. Foster, P. Isabelle, Using Cognates to Align Sentences in Parallel Corpora,
-Proceedings of the 4th International Conference on Theoretical and Methodological Issues
-in Machine Translation, Montreal (1992)
-7. http://www.cs.ualberta.ca/~oracle8/oradoc/DOC/cartridg.804/a58165/appa.htm
-8. http://www.muscat.com
-9. ftp://ftp.cs.cornell.edu/pub/smart/
-
+Brown
+Pietra
+Pietra
+Mercer
+mathematics
+machine
+translation
+Parameter
+estimation
+Computational
+Linguistics
+1993
+263­312
+Chen
+Parallel
+Text
+Mining
+Cross­Language
+Information
+Retrieval
+using
+Statistical
+Translation
+Model
+M.Sc
+Thesis
+DIRO
+University
+Montreal
+2000
+Gale
+Church
+program
+aligning
+sentences
+bilingual
+corpora
+Computational
+Linguistics
+19:1
+1993
+75­102
+Franz
+McCarley
+Roukos
+multilingual
+information
+retrieval
+Seventh
+Text
+Retrieval
+Conference
+TREC­7
+NIST
+500­242
+1998
+157­
+Isabelle
+Simard
+Durand
+Cross­language
+information
+retrieval
+based
+parallel
+texts
+automatic
+mining
+parallel
+texts
+from
+ACM­SIGIR
+conference
+Berkeley
+1999
+74­81
+Simard
+Foster
+Isabelle
+Using
+Cognates
+Align
+Sentences
+Parallel
+Corpora
+Proceedings
+International
+Conference
+Theoretical
+Methodological
+Issues
+Machine
+Translation
+Montreal
+1992
+http://www.cs.ualberta.ca/~oracle8/oradoc/DOC/cartridg.804/a58165/appa.htm
+http://www.muscat.com
+ftp://ftp.cs.cornell.edu/pub/smart

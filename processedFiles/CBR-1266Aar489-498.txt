@@ -1,82 +1,360 @@
-Qualitative Knowledge to Support Reasoning About
+Qualitative
+Knowledge
+Support
+Reasoning
+About
 Cases
-
-Robert J. Aarts and Juho Rousu
-VTT Biotechnology and Food Research
-P.O. Box 1500, FIN—02044 VTT, Finland
-{Robert.Aarts, Juho.Rousu}@vtt.fi
-
-
-
-Abstract. Our recipe planner for bioprocesses, Sophist, uses a semi-qualitative
-model to reason about cases. The model represents qualitative knowledge about
-the possible effects of differences between cases and about the possible causes
-of observed problems. Hence, the model is a crucial resource of adaptation
-knowledge. The model representation has been developed specifically to
-support CBR tasks. The essential notion in this representation is that of an
-influence. Representation of domain knowledge in an influence graph and a
-mapping of case-features onto nodes of such a graph, enable a variety of
-interesting reasoning tasks. Examples of such task illustrate how qualitative
-reasoning and case-based reasoning support each other in complex planning
-tasks.
+Robert
+Aarts
+Juho
+Rousu
+Biotechnology
+Food
+Research
+1500
+FIN—02044
+Finland
+Robert.Aarts
+Juho.Rousu}@vtt.fi
+Abstract
+recipe
+planner
+bioprocesses
+Sophist
+uses
+semi-qualitative
+model
+reason
+about
+cases
+model
+represents
+qualitative
+knowledge
+about
+possible
+effects
+differences
+between
+cases
+about
+possible
+causes
+observed
+problems
+Hence
+model
+crucial
+resource
+adaptation
+knowledge
+model
+representation
+been
+developed
+specifically
+support
+tasks
+essential
+notion
+this
+representation
+that
+influence
+Representation
+domain
+knowledge
+influence
+graph
+mapping
+case-features
+onto
+nodes
+such
+graph
+enable
+variety
+interesting
+reasoning
+tasks
+Examples
+such
+task
+illustrate
+qualitative
+reasoning
+case-based
+reasoning
+support
+each
+other
+complex
+planning
+tasks
 References
-Aamodt, A. (1994). Explanation-driven case-based reasoning, In S. Wess, K. Althoff, M.
-Richter (Eds.): Topics in Case-based reasoning. Springer Verlag, pp. 274-288.
-
-Aarts, R.J. & Rousu, J. (1996). Towards CBR for bioprocess planning. In Smith I., Faltings, B.,
-(Eds.): Proceedings of EWCBR-96, Lausanne, Lecture Notes in Artificial Intelligence,
-1186: 16-27.
-
-Ashley, K.D. & Aleven, V. (1996). How different is different? Arguing About the Significance
-of Similarities and Differences. In Smith I., Faltings, B., (Eds.): Proceedings of EWCBR-
-96, Lausanne, Lecture Notes in Artificial Intelligence, 1186: 1-15.
-
-Bhatta, S., Goel, A. & Prabhakar, 5. (1994). Innovation in Analogical Design: A Model-Based
-Approach. Proc. of the Third International Conference on Al in Design, Aug. 1994,
-Lausanne, Switzerland.
-
-DeJong, G. F. (1994). Learning to plan in continuous domains. Artificial Intelligence 65: 71
-141.
-
-Falkenhainer, B., Forbus, K.D. & Gentner, D. (1989). The Structure-Mapping Engine:
-Algorithm and Examples. Artificial Intelligence 41:1-63.
-
-Forbus. K.D. (1984). Qualitative Process Theory. Artificial Intelligence 24: 85—168.
-
-Hammond, K. (1990). Explaining and Repairing Plans That Fail. Artificial Intelligence,
-45: 173—228.
-
-Hanney, K. & Keane, M.T. (1996). Learning Adaptation Rules from a Case-Base. In Smith I.,
-Faltings, B., (Eds). Proceedings of EWCBR-96, Lausanne, Lecture Notes in Artificial
-Intelligence, 1186: 179-192.
-
-Hastings, J.D., Branting, L.K. & Lockwood, J.A. (1995), Case Adaptation Using an Incomplete
-Causal Model. In: Veloso, M. & Aamodt, A. (Eds.): Proceedings ICCBR-95, Sesimbra,
-Lecture Notes in Artificial Intelligence, 1010: 18 1—192.
-
-Leake, D.B., Kinley, A. & Wilson, D. Learning to Improve Case Adaptation by Introspective
-Reasoning and CBR. In: Veloso, M. & Aamodt, A. (Eds.): Proceedings ICCBR-95,
-Sesimbra, Lecture Notes in Artificial Intelligence, 1010: 229—240.
-
-Kamp, G. (1996). Using Description Logics for Knowledge Intensive Case-Based Reasoning.
-In Smith I., Faltings, B., (Eds). Proceedings of EWCBR-96, Lausanne, Lecture Notes in
-Artificial Intelligence, 1186: 204-218
-
-Koton, P. (1989). Using experience in learning and problem solving. Massachusetts Institute of
-Technology, Laboratory of Computer Science (Ph.D. diss., October 1988), MIT/LCS/TR-
-441.
-
-Nayak P. & Joskowicz, L. (1996). Efficient compositional modeling for generating causal
-explanations. Artificial Intelligence 83: 193-227.
-
-Richter, M. (1995). The similarity Issue in CBR : The knowledge contained in similarity
-measures, Invited talk at ICCBR -95, Sesimbra.
-
-Say, A.C.C. & Kuru, 5. (1996). Qualitative system identification: deriving structure from
-behavior. Artificial Intelligence 83: 75-141.
-
-Schank, R.C. & Leake, D.B. (1989). Creativity and Learning in a Case-Based Explainer.
-Artificial Intelligence 40: 353-385.
-
-Sycara, K., Guttal, R., Koning, J., Narasimhan, S. & Navinchandra, D. (1992) CADET: a Case-based 
-Synthesis Tool for Engineering Design, Intl. J. Expert Systems, 4:2.
+Aamodt
+1994
+Explanation-driven
+case-based
+reasoning
+Wess
+Althoff
+Richter
+Topics
+Case-based
+reasoning
+Springer
+Verlag
+274-288
+Aarts
+Rousu
+1996
+Towards
+bioprocess
+planning
+Smith
+Faltings
+Proceedings
+EWCBR-96
+Lausanne
+Lecture
+Notes
+Artificial
+Intelligence
+1186
+16-27
+Ashley
+Aleven
+1996
+different
+different
+Arguing
+About
+Significance
+Similarities
+Differences
+Smith
+Faltings
+Proceedings
+EWCBR
+Lausanne
+Lecture
+Notes
+Artificial
+Intelligence
+1186
+1-15
+Bhatta
+Goel
+Prabhakar
+1994
+Innovation
+Analogical
+Design
+Model-Based
+Approach
+Proc
+Third
+International
+Conference
+Design
+1994
+Lausanne
+Switzerland
+DeJong
+1994
+Learning
+plan
+continuous
+domains
+Artificial
+Intelligence
+Falkenhainer
+Forbus
+Gentner
+1989
+Structure-Mapping
+Engine
+Algorithm
+Examples
+Artificial
+Intelligence
+41:1-63
+Forbus
+1984
+Qualitative
+Process
+Theory
+Artificial
+Intelligence
+85—168
+Hammond
+1990
+Explaining
+Repairing
+Plans
+That
+Fail
+Artificial
+Intelligence
+173—228
+Hanney
+Keane
+1996
+Learning
+Adaptation
+Rules
+from
+Case-Base
+Smith
+Faltings
+Proceedings
+EWCBR-96
+Lausanne
+Lecture
+Notes
+Artificial
+Intelligence
+1186
+179-192
+Hastings
+Branting
+Lockwood
+1995
+Case
+Adaptation
+Using
+Incomplete
+Causal
+Model
+Veloso
+Aamodt
+Proceedings
+ICCBR-95
+Sesimbra
+Lecture
+Notes
+Artificial
+Intelligence
+1010
+1—192
+Leake
+Kinley
+Wilson
+Learning
+Improve
+Case
+Adaptation
+Introspective
+Reasoning
+Veloso
+Aamodt
+Proceedings
+ICCBR-95
+Sesimbra
+Lecture
+Notes
+Artificial
+Intelligence
+1010
+229—240
+Kamp
+1996
+Using
+Description
+Logics
+Knowledge
+Intensive
+Case-Based
+Reasoning
+Smith
+Faltings
+Proceedings
+EWCBR-96
+Lausanne
+Lecture
+Notes
+Artificial
+Intelligence
+1186
+204-218
+Koton
+1989
+Using
+experience
+learning
+problem
+solving
+Massachusetts
+Institute
+Technology
+Laboratory
+Computer
+Science
+Ph.D
+diss
+October
+1988
+MIT/LCS/TR
+Nayak
+Joskowicz
+1996
+Efficient
+compositional
+modeling
+generating
+causal
+explanations
+Artificial
+Intelligence
+193-227
+Richter
+1995
+similarity
+Issue
+knowledge
+contained
+similarity
+measures
+Invited
+talk
+ICCBR
+Sesimbra
+A.C.C
+Kuru
+1996
+Qualitative
+system
+identification
+deriving
+structure
+from
+behavior
+Artificial
+Intelligence
+75-141
+Schank
+Leake
+1989
+Creativity
+Learning
+Case-Based
+Explainer
+Artificial
+Intelligence
+353-385
+Sycara
+Guttal
+Koning
+Narasimhan
+Navinchandra
+1992
+CADET
+Case-based
+Synthesis
+Tool
+Engineering
+Design
+Intl
+Expert
+Systems

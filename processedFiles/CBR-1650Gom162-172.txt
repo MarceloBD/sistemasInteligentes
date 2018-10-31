@@ -1,58 +1,296 @@
-An Evolutionary Approach to Case Adaptation
-
-
-Andrйs Gуmez de Silva Garza and Mary Lou Maher
-
-
-Key Centre of Design Computing
-Department of Architectural and Design Science
-University of Sydney NSW 2006
+Evolutionary
+Approach
+Case
+Adaptation
+Andrйs
+Gуmez
+Silva
+Garza
+Mary
+Maher
+Centre
+Design
+Computing
+Department
+Architectural
+Design
+Science
+University
+Sydney
+2006
 Australia
-
-FAX: (+61-2) 9351-3031
-Phone: (+61-2) 935 1-2053
-E-mail: {andres,mary}@arch.usyd.edu.au
-
-
-
-
-Abstract. We present a case adaptation method that employs ideas from the field of
-genetic algorithms. Two types of adaptations, case combination and case mutation, are
-used to evolve variations on the contents of retrieved cases until a satisfactory solution is
-found for a new specified problem. A solution is satisfactory if it matches the specitied
-requirements and does not violate any constraints imposed by the domain of
-applicability. We have implemented our ideas in a computational system called
-GENCAD, applied to the layout design of residences such that they conform to the
-principles of feng shui, the Chinese art of placement. This implementation allows us to
-evaluate the use of GA’s for case adaptation in CBR. Experimental results show the role
-of representation and constraints.
+61-2
+9351-3031
+Phone
+61-2
+1-2053
+E-mail
+andres,mary}@arch.usyd.edu.au
+Abstract
+present
+case
+adaptation
+method
+that
+employs
+ideas
+from
+field
+genetic
+algorithms
+types
+adaptations
+case
+combination
+case
+mutation
+used
+evolve
+variations
+contents
+retrieved
+cases
+until
+satisfactory
+solution
+found
+specified
+problem
+solution
+satisfactory
+matches
+specitied
+requirements
+does
+violate
+constraints
+imposed
+domain
+applicability
+have
+implemented
+ideas
+computational
+system
+called
+GENCAD
+applied
+layout
+design
+residences
+such
+that
+they
+conform
+principles
+feng
+shui
+Chinese
+placement
+This
+implementation
+allows
+evaluate
+GA’s
+case
+adaptation
+Experimental
+results
+show
+role
+representation
+constraints
 References
-1.	Kolodner, J .L.: Case-Based Reasoning, Morgan Kaufmann Publishers (1993)
-2.	Leake. D.B.: Case-Based Reasoning: Experiences, Lessons, & Future Directions, AAAI Press/The
-MIT Press, Boston (1996)
-3.	Maher, M.L. and Pu, P. (eds.): Issues and Applications of Case-Based Reasoning in Design,
-Lawrence Erlbaum Associates, Mahwah, New Jersey (1997)
-4.	Mitchell, M.: An Introduction to Genetic Algorithms (Complex Adaptive Systems Series), MIT
-Press, Boston (1998)
-5.	Gуmez de Silva Garza, A. and Maher, M.L.: A Knowledge-Lean Structural Engineering Design
-Expert System, Proceedings of the Fourth World Congress on Expert Systems, Mexico City,
-Mexico (1998)
-6.	Rossbach, S.: Interior Design with Feng Shui, Rider Books. London (1987)
-7.	Hildebrand. G.: The Wright Space: Pattern & Meaning in Frank Lloyd Wright’s Houses, University
-of Washington Press, Seattle (1991)
-8.	Zhang, D.M.: A Hybrid Design Process Model Using Case-Based Reasoning, Ph.D. dissertation,
-Department of Architectural and Design Science, University of Sydney. Australia (1994)
-9.	Hinrichs, T.R.: Plausible Design Advice Through Case-Based Reasoning, in Maher, M.L. and Pu,
-P. (eds.). Issues and Applications of Case-Based Reasoning in Design, 133-159, Lawrence Erlbaum
-Associates, Mahwah, New Jersey (1997)
-10.	Faltings. B.: Case Reuse by Model-Based Interpretation, in Maher, M.L. and Pu, P. (eds.), Issues
-and Applications of Case-Based Reasoning in Design, 39-60, Lawrence Erlbaum Associates,
-Mahwah, New Jersey (1997)
-11.	Pu. P. and Purvis, L.: Formalizing the Adaptation Process for Case-Based Design, in Maher, M.L.
-•and Pu, P (eds.), Issues and Applications of Case-Based Reasoning in Design, 22 1-240, Lawrence
-Erlbaum Associates, Mahwah, New Jersey (1997)
-12.	Ramsey, C.L. and Grefenstette. J.J.: Case-Based Initialization of Genetic Algorithms, Proceedings
-d)f the Fifth International Conference on Genetic Algorithms, 84-91, Morgan Kaufmann Publishers
-(1993)
-13.	Louis, S.J. and Johnson. J.: Robustness of Case-Initialized Genetic Algorithms, Proceedings of
-FLAIRS (Florida Artificial Intelligence Conference) ‘99. To appear (1999)
+Kolodner
+Case-Based
+Reasoning
+Morgan
+Kaufmann
+Publishers
+1993
+Leake
+Case-Based
+Reasoning
+Experiences
+Lessons
+Future
+Directions
+AAAI
+Press/The
+Press
+Boston
+1996
+Maher
+Issues
+Applications
+Case-Based
+Reasoning
+Design
+Lawrence
+Erlbaum
+Associates
+Mahwah
+Jersey
+1997
+Mitchell
+Introduction
+Genetic
+Algorithms
+Complex
+Adaptive
+Systems
+Series
+Press
+Boston
+1998
+Gуmez
+Silva
+Garza
+Maher
+Knowledge-Lean
+Structural
+Engineering
+Design
+Expert
+System
+Proceedings
+Fourth
+World
+Congress
+Expert
+Systems
+Mexico
+City
+Mexico
+1998
+Rossbach
+Interior
+Design
+with
+Feng
+Shui
+Rider
+Books
+London
+1987
+Hildebrand
+Wright
+Space
+Pattern
+Meaning
+Frank
+Lloyd
+Wright’s
+Houses
+University
+Washington
+Press
+Seattle
+1991
+Zhang
+Hybrid
+Design
+Process
+Model
+Using
+Case-Based
+Reasoning
+Ph.D
+dissertation
+Department
+Architectural
+Design
+Science
+University
+Sydney
+Australia
+1994
+Hinrichs
+Plausible
+Design
+Advice
+Through
+Case-Based
+Reasoning
+Maher
+Issues
+Applications
+Case-Based
+Reasoning
+Design
+133-159
+Lawrence
+Erlbaum
+Associates
+Mahwah
+Jersey
+1997
+Faltings
+Case
+Reuse
+Model-Based
+Interpretation
+Maher
+Issues
+Applications
+Case-Based
+Reasoning
+Design
+39-60
+Lawrence
+Erlbaum
+Associates
+Mahwah
+Jersey
+1997
+Purvis
+Formalizing
+Adaptation
+Process
+Case-Based
+Design
+Maher
+•and
+Issues
+Applications
+Case-Based
+Reasoning
+Design
+1-240
+Lawrence
+Erlbaum
+Associates
+Mahwah
+Jersey
+1997
+Ramsey
+Grefenstette
+Case-Based
+Initialization
+Genetic
+Algorithms
+Proceedings
+Fifth
+International
+Conference
+Genetic
+Algorithms
+84-91
+Morgan
+Kaufmann
+Publishers
+1993
+Louis
+Johnson
+Robustness
+Case-Initialized
+Genetic
+Algorithms
+Proceedings
+FLAIRS
+Florida
+Artificial
+Intelligence
+Conference
+appear
+1999

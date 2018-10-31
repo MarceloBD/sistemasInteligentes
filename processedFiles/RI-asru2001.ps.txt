@@ -1,63 +1,293 @@
-LANGUAGE MODELING FOR MULTI­DOMAIN SPEECH­DRIVEN TEXT RETRIEVAL
-
-Katunobu Itou 1 , Atsushi Fujii 2 , Tetsuya Ishikawa 2
-1 National Institute of Advanced Industrial Science and Technology
-1­1­1 Chuuou Daini Umezono, Tsukuba, 305­8568, Japan, E­mail: itou@ni.aist.go.jp
-2 University of Library and Information Science
-1­2 Kasuga, Tsukuba, 305­8550, Japan, E­mail: {fujii,ishikawa}@ulis.ac.jp
-
+LANGUAGE
+MODELING
+MULTI­DOMAIN
+SPEECH­DRIVEN
+TEXT
+RETRIEVAL
+Katunobu
+Itou
+Atsushi
+Fujii
+Tetsuya
+Ishikawa
+National
+Institute
+Advanced
+Industrial
+Science
+Technology
+1­1­1
+Chuuou
+Daini
+Umezono
+Tsukuba
+305­8568
+Japan
+E­mail
+itou@ni.aist.go.jp
+University
+Library
+Information
+Science
+Kasuga
+Tsukuba
+305­8550
+Japan
+E­mail
+fujii,ishikawa}@ulis.ac.jp
 ABSTRACT
-We report experimental results associated with speech­driven text
-retrieval, which facilitates retrieving information in multiple do­mains 
-with spoken queries. Since users speak contents related to
-a target collection, we produce language models used for speech
-recognition based on the target collection, so as to improve both
-the recognition and retrieval accuracy. Experiments using existing
-test collections combined with dictated queries showed the effec­tiveness 
-of our method.
-
-
-5. REFERENCES
-[1] John S. Garofolo, Ellen M. Voorhees, Vincent M. Stanford,
-and Karen Sparck Jones, ``TREC­6 1997 spoken document
-retrieval track overview and results,'' in Proceedings of the
-6th Text REtrieval Conference, 1997, pp. 83--91.
-[2] J. Barnett, S. Anderson, J. Broglio, M. Singh, R. Hudson, and
-S. W. Kuo, ``Experiments in spoken queries for document
-retrieval,'' in Proceedings of Eurospeech97, 1997, pp. 1323--
-1326.
-[3] Fabio Crestani, ``Word recognition errors and relevance feed­
-back in spoken query processing,'' in Proceedings of the
-Fourth International Conference on Flexible Query Answer­ing Systems, 2000, pp. 267--281.
-[4] Lalit. R. Bahl, Frederick Jelinek, and Robert L. Mercer, ``A
-maximum linklihood approach to continuous speech recog­nition,
-'' IEEE Transactions on Pattern Analysis and Machine
-Intelligence, vol. 5, no. 2, pp. 179--190, 1983.
-[5] T. Kawahara, A. Lee, T. Kobayashi, K. Takeda, N. Mine­matsu, 
-S. Sagayama, K. Itou, A. Ito, M. Yamamoto, A. Ya­
-mada, T. Utsuro, and K. Shikano, ``Free software toolkit for
-Japanese large vocabulary continuous speech recognition,''
-in Proceedings of the 6th International Conference on Spo­ken 
-Language Processing, 2000, pp. 476--479.
-[6] K. Itou, M. Yamamoto, K. Takeda, T. Takezawa, T. Mat­suoka, 
-T. Kobayashi, K. Shikano, and S. Itahashi, ``The de­sign 
-of the newspaper­based Japanese large vocabulary con­tinuous 
-speech recognition corpus,'' in ICSLP­98, 1998, pp.
-3261--3264.
-[7] S. E. Robertson and S. Walker, ``Some simple effec­tive 
-approximations to the 2­poisson model for probabilis­tic 
-weighted retrieval,'' in Proceedings of the 17th Annual
-International ACM SIGIR Conference on Research and De­velopment 
-in Information Retrieval, 1994, pp. 232--241.
-[8] Yuji Matsumoto, Akira Kitauchi, Tatsuo Yamashita, Yoshi­taka 
-Hirano, Hiroshi Matsuda, and Masayuki Asahara,
-``Japanese morphological analysis system ChaSen version
-2.0 manual 2nd edition,'' Tech. Rep. NAIST­IS­TR99009,
-NAIST, 1999.
-[9] National Institute of Informatics, Proceedings of the 2nd
-NTCIR Workshop Meeting on Evaluation of Chinese &
-Japanese Text Retrieval and Text Summarization, 2001.
-[10] Satoshi Sekine and Hitoshi Isahara, ``IREX: IR and IE evalu­ation 
-project in Japanese,'' in Proceedings of the 2nd Interna­tional 
-Conference on Language Resources and Evaluation,
-2000, pp. 1475--1480.
+report
+experimental
+results
+associated
+with
+speech­driven
+text
+retrieval
+which
+facilitates
+retrieving
+information
+multiple
+do­mains
+with
+spoken
+queries
+Since
+users
+speak
+contents
+related
+target
+collection
+produce
+language
+models
+used
+speech
+recognition
+based
+target
+collection
+improve
+both
+recognition
+retrieval
+accuracy
+Experiments
+using
+existing
+test
+collections
+combined
+with
+dictated
+queries
+showed
+effec­tiveness
+method
+REFERENCES
+John
+Garofolo
+Ellen
+Voorhees
+Vincent
+Stanford
+Karen
+Sparck
+Jones
+TREC­6
+1997
+spoken
+document
+retrieval
+track
+overview
+results
+Proceedings
+Text
+REtrieval
+Conference
+1997
+83--91
+Barnett
+Anderson
+Broglio
+Singh
+Hudson
+Experiments
+spoken
+queries
+document
+retrieval
+Proceedings
+Eurospeech97
+1997
+1323
+1326
+Fabio
+Crestani
+Word
+recognition
+errors
+relevance
+feed­
+back
+spoken
+query
+processing
+Proceedings
+Fourth
+International
+Conference
+Flexible
+Query
+Answer­ing
+Systems
+2000
+267--281
+Lalit
+Bahl
+Frederick
+Jelinek
+Robert
+Mercer
+maximum
+linklihood
+approach
+continuous
+speech
+recog­nition
+IEEE
+Transactions
+Pattern
+Analysis
+Machine
+Intelligence
+179--190
+1983
+Kawahara
+Kobayashi
+Takeda
+Mine­matsu
+Sagayama
+Itou
+Yamamoto
+mada
+Utsuro
+Shikano
+Free
+software
+toolkit
+Japanese
+large
+vocabulary
+continuous
+speech
+recognition
+Proceedings
+International
+Conference
+Spo­ken
+Language
+Processing
+2000
+476--479
+Itou
+Yamamoto
+Takeda
+Takezawa
+Mat­suoka
+Kobayashi
+Shikano
+Itahashi
+de­sign
+newspaper­based
+Japanese
+large
+vocabulary
+con­tinuous
+speech
+recognition
+corpus
+ICSLP­98
+1998
+3261--3264
+Robertson
+Walker
+Some
+simple
+effec­tive
+approximations
+2­poisson
+model
+probabilis­tic
+weighted
+retrieval
+Proceedings
+17th
+Annual
+International
+SIGIR
+Conference
+Research
+De­velopment
+Information
+Retrieval
+1994
+232--241
+Yuji
+Matsumoto
+Akira
+Kitauchi
+Tatsuo
+Yamashita
+Yoshi­taka
+Hirano
+Hiroshi
+Matsuda
+Masayuki
+Asahara
+Japanese
+morphological
+analysis
+system
+ChaSen
+version
+manual
+edition
+Tech
+NAIST­IS­TR99009
+NAIST
+1999
+National
+Institute
+Informatics
+Proceedings
+NTCIR
+Workshop
+Meeting
+Evaluation
+Chinese
+Japanese
+Text
+Retrieval
+Text
+Summarization
+2001
+Satoshi
+Sekine
+Hitoshi
+Isahara
+IREX
+evalu­ation
+project
+Japanese
+Proceedings
+Interna­tional
+Conference
+Language
+Resources
+Evaluation
+2000
+1475--1480

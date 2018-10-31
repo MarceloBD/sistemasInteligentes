@@ -1,54 +1,244 @@
-An Architecture for
-Knowledge Intensive CBR Systems*
-
-Belйn Dнaz-Agudo and Pedro A. Gonzбlez-Calero
-
-Dep. Sistemas Informбticos y Programaci6n
-Universidad Complutense de Madrid, Spain
-{belend, pedro}@sip.ucm.es
-
-
-
-Abstract. In this paper we describe a domain independent architecture
-to help in the design of knowledge intensive CBR systems. It is based on
-the knowledge incorporation from a library of application-independent
-ontologies and the use of an ontology with the common CBR terminology
-that guides the case representation and allows the description of flexible,
-generic and homogeneous CBR processes based on classification.
+Architecture
+Knowledge
+Intensive
+Systems
+Belйn
+Dнaz-Agudo
+Pedro
+Gonzбlez-Calero
+Sistemas
+Informбticos
+Programaci6n
+Universidad
+Complutense
+Madrid
+Spain
+belend
+pedro}@sip.ucm.es
+Abstract
+this
+paper
+describe
+domain
+independent
+architecture
+help
+design
+knowledge
+intensive
+systems
+based
+knowledge
+incorporation
+from
+library
+application-independent
+ontologies
+ontology
+with
+common
+terminology
+that
+guides
+case
+representation
+allows
+description
+flexible
+generic
+homogeneous
+processes
+based
+classification
 References
-
-1.	Ashley K. & Aleven V., 1993: “A logical representation for relevance criteria”, in
-Topics in CBR (Wess S., Aithoff K. & Richter M., eds.), Springer-Verlag.
-2.	Aarts R. J., 1998: “A CBR Architecture for Project Knowledge Management”, in
-Advances in CBR (Smyth B. & Cunningham P., eds.), Springer-Verlag.
-3.	Brachman R. J., McGuinness D. L., Patel-Schneider P. F., Resnick L. A., & Borgida
-A. 1991: “Living with CLASSIC: When and How to Use a KL-ONE-Like Lan-
-guage” . In Principles of Semantic Networks. Morgan Kaufmann Puhlishers.
-4.	Cehhardt F., VoB A., Grдther W., Schmidt-Belz B., 1997: Reasoning with Complex
-Cases. Kluwer Academic Puhlishers.
-5.	Gуmez-Albarran M., Gonzбlez-Calero P. A., Dнaz-Agudo B. & Fernndez-Conde C.,
-1999: “Modelling the CBR Life Cycle Using Description Logics”, in Procs. of the
-3rd International Conference on Case-Based Reasoning (ICCBR’99). K.-D. Althoff,
-R.Bergmann & L. K. Branting (Eds.).
-6.	Gуrnez-Pйrez A., 1998: “Knowledge Sharing and Reuse” . The handbook on Applied
-Expert Systems. By Liebowitz. ED CRC Press. 1998.
-7.	Gonzбlez-Calero P. A., Gуmez-Albarran M., & Dнaz-Agudo B., 1999: “Applying
-DLs for Retrieval in Case-Based Reasoning”, in Procs. of the 1999 Description
-Logics Workshop (DL’99).
-8.	Gruber, T. “A translation Approach to portable ontology specifications” . Knowl-
-edge Acquisition. Vol, 5. 1993.
-9.	Mac Gregor, R., 1991: “The evolving technology of classification-based knowledge
-representation systems”, in Principles of Semantic Networks: Explorations in the
-Representation of Knowledge (J. Sowa, ed.),
-10.	Napoli A., Lieber J., & Courien R., 1996: “Classification-Based Problem Solving
-in CBR”, in Advances in CBR (Smith I. & Faltings B., eds.), Springer-Verlag.
-11.	Ozturk P. & A.Aarnodt, 1998: “A Context Model for Knowledge-Intensive Case-Based 
-Reasoning “, International Journal of Human-Computer Studies. Vol.48,3.
-12.	Plaza E., 1995: “Cases as Terms: A feature term approach to the structured representation 
-of cases” . In Procs. ICCBR-95.
-13.	Pinto H. S., Gуrnez-Pйrez A. & Martins J. P., 1999: “ Some Issues on Ontology
-Integration”,in IJCAI-99, Workshop on Ontologies and Problem-Solving Methods:
-Lessons Learned and Future Trends.
-14.	Salotti S. & Ventos V., 1998: “Study and Formalization of a CBR System using
-a Description Logic”, in Advances in CBR (Smyth B. & Cunningham P., eds.),
-Springer-Verlag.
+Ashley
+Aleven
+1993
+logical
+representation
+relevance
+criteria”
+Topics
+Wess
+Aithoff
+Richter
+Springer-Verlag
+Aarts
+1998
+Architecture
+Project
+Knowledge
+Management”
+Advances
+Smyth
+Cunningham
+Springer-Verlag
+Brachman
+McGuinness
+Patel-Schneider
+Resnick
+Borgida
+1991
+“Living
+with
+CLASSIC
+When
+KL-ONE-Like
+guage”
+Principles
+Semantic
+Networks
+Morgan
+Kaufmann
+Puhlishers
+Cehhardt
+Grдther
+Schmidt-Belz
+1997
+Reasoning
+with
+Complex
+Cases
+Kluwer
+Academic
+Puhlishers
+Gуmez-Albarran
+Gonzбlez-Calero
+Dнaz-Agudo
+Fernndez-Conde
+1999
+“Modelling
+Life
+Cycle
+Using
+Description
+Logics”
+Procs
+International
+Conference
+Case-Based
+Reasoning
+ICCBR’99
+K.-D
+Althoff
+R.Bergmann
+Branting
+Gуrnez-Pйrez
+1998
+“Knowledge
+Sharing
+Reuse”
+handbook
+Applied
+Expert
+Systems
+Liebowitz
+Press
+1998
+Gonzбlez-Calero
+Gуmez-Albarran
+Dнaz-Agudo
+1999
+“Applying
+Retrieval
+Case-Based
+Reasoning”
+Procs
+1999
+Description
+Logics
+Workshop
+DL’99
+Gruber
+translation
+Approach
+portable
+ontology
+specifications”
+Knowl
+edge
+Acquisition
+1993
+Gregor
+1991
+“The
+evolving
+technology
+classification-based
+knowledge
+representation
+systems”
+Principles
+Semantic
+Networks
+Explorations
+Representation
+Knowledge
+Sowa
+Napoli
+Lieber
+Courien
+1996
+“Classification-Based
+Problem
+Solving
+CBR”
+Advances
+Smith
+Faltings
+Springer-Verlag
+Ozturk
+A.Aarnodt
+1998
+Context
+Model
+Knowledge-Intensive
+Case-Based
+Reasoning
+International
+Journal
+Human-Computer
+Studies
+Vol.48,3
+Plaza
+1995
+“Cases
+Terms
+feature
+term
+approach
+structured
+representation
+cases”
+Procs
+ICCBR-95
+Pinto
+Gуrnez-Pйrez
+Martins
+1999
+Some
+Issues
+Ontology
+Integration”,in
+IJCAI-99
+Workshop
+Ontologies
+Problem-Solving
+Methods
+Lessons
+Learned
+Future
+Trends
+Salotti
+Ventos
+1998
+“Study
+Formalization
+System
+using
+Description
+Logic”
+Advances
+Smyth
+Cunningham
+Springer-Verlag

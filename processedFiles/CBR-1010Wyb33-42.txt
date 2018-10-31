@@ -1,56 +1,307 @@
-PROFIL : a decision support tool for metallic
-sections design using a CBR approach
-
-Jean Luc WYBO, Frйderic GEFFRAYE, Aline RUSSELL
-Ecole des Mines de Paris - CEMEF/IAM
-
-B.P. 207 - 06904 Sophia Antipolis Cedex (France)
-
-
+PROFIL
+decision
+support
+tool
+metallic
+sections
+design
+using
+approach
+Jean
+WYBO
+Frйderic
+GEFFRAYE
+Aline
+RUSSELL
+Ecole
+Mines
+Paris
+CEMEF/IAM
+06904
+Sophia
+Antipolis
+Cedex
+France
 Abstract
-
-This paper presents the PROFIL system, a Decision Support Tool for the Design of
-metallic sections production. The PROFIL system uses a Case-Based Reasoning approach
-for the selection of pertinent former designs.
-Production of metallic sections is done by a succession of forming operations. The design
-task is composed of two parts : selection and scheduling of operations and assessment of
-forming tools geometry.
-The PROFIL system also provides support to production technicians, to input process
-parameters and control measurements as part of cases, and to adjust settings during pre-production trials.
-Selection of cases is made by following two orthogonal points of view, on similarity and
-quality of produced parts. Similarity is based on selection of relevant dimensions of the
-section, while quality is based on selection of potential defects. Each dimension or defect
-is associated to an evaluation function which uses a fuzzy logic approach. To improve
-ergonomy, relevant cases are displayed in a two-dimension space : similitude/quality.
-Implementation of the system has been done on a computer workstation, using a
-commercial DBMS, in order to cope with industrial requirements.
-The PROFIL system is operational in the industrial site and provides support to designers
-and process technicians.
+This
+paper
+presents
+PROFIL
+system
+Decision
+Support
+Tool
+Design
+metallic
+sections
+production
+PROFIL
+system
+uses
+Case-Based
+Reasoning
+approach
+selection
+pertinent
+former
+designs
+Production
+metallic
+sections
+done
+succession
+forming
+operations
+design
+task
+composed
+parts
+selection
+scheduling
+operations
+assessment
+forming
+tools
+geometry
+PROFIL
+system
+also
+provides
+support
+production
+technicians
+input
+process
+parameters
+control
+measurements
+part
+cases
+adjust
+settings
+during
+pre-production
+trials
+Selection
+cases
+made
+following
+orthogonal
+points
+view
+similarity
+quality
+produced
+parts
+Similarity
+based
+selection
+relevant
+dimensions
+section
+while
+quality
+based
+selection
+potential
+defects
+Each
+dimension
+defect
+associated
+evaluation
+function
+which
+uses
+fuzzy
+logic
+approach
+improve
+ergonomy
+relevant
+cases
+displayed
+two-dimension
+space
+similitude/quality
+Implementation
+system
+been
+done
+computer
+workstation
+using
+commercial
+DBMS
+order
+cope
+with
+industrial
+requirements
+PROFIL
+system
+operational
+industrial
+site
+provides
+support
+designers
+process
+technicians
 References
-
-[Cauzenille 85] Cauzenille-Marmeche E., Mathieu J., Weil-Barais A. “Raisonnement
-analogique et rйsolution de problиmes” l’annйe psychologique, (1985), 85, pp. 49-72
-[Darpa 89] “Case-Based Reasoning” in Proceedings of the DARPA Workshop on
-Case-Based Reasoning, Machine Learning Program Plan, DARPA ed., Pensacola
-Beach Florida, 1989
-[Geffraye 94] Geffraye F. “Aide а la conception d’outillage : apport de la simulation et
-du raisonnement par cas. Application а l’йtirage de profilйs mйtalliques” Thйse de
-doctorat, Ecole des Mines de Paris, 1994
-[Levine 89] Levine P., Pomerol J.C. “Systиmes Interactifs d’Aide а la Dйcision et
-Systиmes experts” Traitй des nouvelles technologies, Hermйs ed., Paris 1989
-[Maurice-Demourioux 93] Maurice-Demourioux M., Lвasri B., Levallet C., Pinson
-S. “Le raisonnement а partir de cas : panorama et modйlisation dynamique” in
-Sйminaire Raisonnement а partir de cas, LAFORIA, Institut Blaise Pascal, Paris
+Cauzenille
+Cauzenille-Marmeche
+Mathieu
+Weil-Barais
+“Raisonnement
+analogique
+rйsolution
+problиmes”
+l’annйe
+psychologique
+1985
+49-72
+Darpa
+“Case-Based
+Reasoning”
+Proceedings
+DARPA
+Workshop
+Case-Based
+Reasoning
+Machine
+Learning
+Program
+Plan
+DARPA
+Pensacola
+Beach
+Florida
+1989
+Geffraye
+Geffraye
+“Aide
+conception
+d’outillage
+apport
+simulation
+raisonnement
+Application
+l’йtirage
+profilйs
+mйtalliques”
+Thйse
+doctorat
+Ecole
+Mines
+Paris
+1994
+Levine
+Levine
+Pomerol
+“Systиmes
+Interactifs
+d’Aide
+Dйcision
+Systиmes
+experts”
+Traitй
+nouvelles
+technologies
+Hermйs
+Paris
+1989
+Maurice-Demourioux
+Maurice-Demourioux
+Lвasri
+Levallet
+Pinson
+raisonnement
+partir
+panorama
+modйlisation
+dynamique”
+Sйminaire
+Raisonnement
+partir
+LAFORIA
+Institut
+Blaise
+Pascal
+Paris
 1993
-[Rougegrez 94] Rougegrez S. “Prйdiction de processus а partir de comportements
-observйs : le systиme REBECAS” Thйse de doctorat, Universitй Paris VI, 1994
-[Schank 82] Schank R. “Dynamic memory : a theory of reminding and learning in
-computers and people” Cambridge University Press, 1982
-[Slade 91] Slade S. “Case-Based Reasoning : A Research Paradigm”, AI Magazine,
-1991, pp. 42-55
-[Trousse 93] Trousse B., Visser W. “Use of Case-Based Reasoning techniques for
-intelligent computer-aided design systems” in 1993 IEEE International Conference on
-Systems, Man and Cybernetics, IEEE, pp. 513-518
-[Visser 93] Visser W., Trousse B. “Reuse of designs : desesperately seeking an
-interdisciplinary cognitive approach” in Proccedings of IJCAI’93 Workshop on Reuse
-of designs, an Interdisciplinary approach, Chambйry, France, 1993
+Rougegrez
+Rougegrez
+“Prйdiction
+processus
+partir
+comportements
+observйs
+systиme
+REBECAS”
+Thйse
+doctorat
+Universitй
+Paris
+1994
+Schank
+Schank
+“Dynamic
+memory
+theory
+reminding
+learning
+computers
+people”
+Cambridge
+University
+Press
+1982
+Slade
+Slade
+“Case-Based
+Reasoning
+Research
+Paradigm”
+Magazine
+1991
+42-55
+Trousse
+Trousse
+Visser
+“Use
+Case-Based
+Reasoning
+techniques
+intelligent
+computer-aided
+design
+systems”
+1993
+IEEE
+International
+Conference
+Systems
+Cybernetics
+IEEE
+513-518
+Visser
+Visser
+Trousse
+“Reuse
+designs
+desesperately
+seeking
+interdisciplinary
+cognitive
+approach”
+Proccedings
+IJCAI’93
+Workshop
+Reuse
+designs
+Interdisciplinary
+approach
+Chambйry
+France
+1993

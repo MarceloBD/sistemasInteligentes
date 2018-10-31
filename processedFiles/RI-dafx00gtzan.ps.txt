@@ -1,62 +1,265 @@
-3D GRAPHICS TOOLS FOR SOUND COLLECTIONS
-
-George Tzanetakis
-Computer Science Department
-Princeton Univerisy
+GRAPHICS
+TOOLS
+SOUND
+COLLECTIONS
+George
+Tzanetakis
+Computer
+Science
+Department
+Princeton
+Univerisy
 gtzan@cs.princeton.edu
-Perry Cook
-Computer Science Department and Music Department
-Princeton University
+Perry
+Cook
+Computer
+Science
+Department
+Music
+Department
+Princeton
+University
 prc@cs.princeton.edu
-
 ABSTRACT
-Most of the current tools for working with sound work on sin­gle 
-soundfiles, use 2D graphics and offer limited interaction to the
-user. In this paper we describe a set of tools for working with col­lections 
-of sounds that are based on interactive 3D graphics. These
-tools form two families: sound analysis visualization displays and
-model­based controllers for sound synthesis algorithms.
-We describe the general techniques we have used to develop
-these tools and give specific case studies from each family. Several
-collections of sounds were used for development and evaluation.
-These are: a set of musical instrument tones, a set of sound effects,
-a set of FM radio audio clips belonging to several music genres,
-and a set of mp3 rock song snippets.
-
-
-7. REFERENCES
-[1] G. Tzanetakis and P. Cook, ``Marsyas: A framework for au­dio 
-analysis,'' Organised Sound, 2000, (to appear).
-[2] M. Hunt, M. Lennig, and P. Mermelstein, ``Experiments in
-syllable­-based recognition of continuous speech,'' in Proc.
-1996 ICASSP, 1980, pp. 880--883.
-[3] D. Pye, ``Content­based methods for the management of dig­ital 
-music,'' in Proc.Int.Conf on Audio, Speech and Signal
-Processing, ICASSP, 2000.
-[4] G. Tzanetakis and P. Cook, ``Sound analysis using mpeg
-compressed audio,'' in Proc.1999 IEEE Int.conf. on Audio,
-Speech and Signal Processing ICASSP00, Istanbul, 2000.
-[5] L.T.Jolliffe, Principal Component Analysis, Springer­
-Verlag, 1986.
-[6] R. Duda and P. Hart, Pattern Classification and Scene Anal­ysis, 
-John Wiley & Sons, 1973.
-[7] T. Hermann, P. Meinicke, and H. Ritter, ``Principal curve
-sonification,'' in Proc. Int. Conf on Auditory Display, ICAD
-2000.
-[8] P. Cook, ``Toward physically­informed parametric synthesis
-of sound effects,'' in Proc.1999 IEEE Workshop on Appli­cations 
-of Signal Processing to Audio and Acoustics, WAS­
-PAA99, New Paltz, NY, 1999, Invited Keynote Address.
-[9] G. Essl and P. Cook, ``Measurements and efficient simula­tions 
-of bowed bars,'' Journal of Acoustical Society of Amer­ica 
-(JASA), vol. 108, no. 1, pp. 379--388, 2000.
-[10] P. Cook, ``Physically inspired sonic modeling (phism): Syn­thesis 
-of percussive sounds,'' Computer Music Journal, vol.
-21, no. 3, September 1997.
-[11] J.O. Smith, ``Acoustic modeling using digital waveguides,''
-in Musical Signal Processing, C. Roads, S. T. Pope, A. Pic­cialli, 
-and G. De Poli, Eds., pp. 221--263. Netherlands: Swets
-and Zietlinger, 1997.
-[12] P. Cook and G. Scavone, ``The synthesis toolkit (stk), version
-2.1,'' in Proc.1999 Int.Computer Music Conference ICMC,
-Beijing, China, October, 1999.
+Most
+current
+tools
+working
+with
+sound
+work
+sin­gle
+soundfiles
+graphics
+offer
+limited
+interaction
+user
+this
+paper
+describe
+tools
+working
+with
+col­lections
+sounds
+that
+based
+interactive
+graphics
+These
+tools
+form
+families
+sound
+analysis
+visualization
+displays
+model­based
+controllers
+sound
+synthesis
+algorithms
+describe
+general
+techniques
+have
+used
+develop
+these
+tools
+give
+specific
+case
+studies
+from
+each
+family
+Several
+collections
+sounds
+were
+used
+development
+evaluation
+These
+musical
+instrument
+tones
+sound
+effects
+radio
+audio
+clips
+belonging
+several
+music
+genres
+rock
+song
+snippets
+REFERENCES
+Tzanetakis
+Cook
+Marsyas
+framework
+au­dio
+analysis
+Organised
+Sound
+2000
+appear
+Hunt
+Lennig
+Mermelstein
+Experiments
+syllable­-based
+recognition
+continuous
+speech
+Proc
+1996
+ICASSP
+1980
+880--883
+Content­based
+methods
+management
+dig­ital
+music
+Proc.Int.Conf
+Audio
+Speech
+Signal
+Processing
+ICASSP
+2000
+Tzanetakis
+Cook
+Sound
+analysis
+using
+mpeg
+compressed
+audio
+Proc.1999
+IEEE
+Int.conf
+Audio
+Speech
+Signal
+Processing
+ICASSP00
+Istanbul
+2000
+L.T.Jolliffe
+Principal
+Component
+Analysis
+Springer­
+Verlag
+1986
+Duda
+Hart
+Pattern
+Classification
+Scene
+Anal­ysis
+John
+Wiley
+Sons
+1973
+Hermann
+Meinicke
+Ritter
+Principal
+curve
+sonification
+Proc
+Conf
+Auditory
+Display
+ICAD
+2000
+Cook
+Toward
+physically­informed
+parametric
+synthesis
+sound
+effects
+Proc.1999
+IEEE
+Workshop
+Appli­cations
+Signal
+Processing
+Audio
+Acoustics
+WAS­
+PAA99
+Paltz
+1999
+Invited
+Keynote
+Address
+Essl
+Cook
+Measurements
+efficient
+simula­tions
+bowed
+bars
+Journal
+Acoustical
+Society
+Amer­ica
+JASA
+379--388
+2000
+Cook
+Physically
+inspired
+sonic
+modeling
+phism
+Syn­thesis
+percussive
+sounds
+Computer
+Music
+Journal
+September
+1997
+Smith
+Acoustic
+modeling
+using
+digital
+waveguides
+Musical
+Signal
+Processing
+Roads
+Pope
+Pic­cialli
+Poli
+221--263
+Netherlands
+Swets
+Zietlinger
+1997
+Cook
+Scavone
+synthesis
+toolkit
+version
+Proc.1999
+Int.Computer
+Music
+Conference
+ICMC
+Beijing
+China
+October
+1999

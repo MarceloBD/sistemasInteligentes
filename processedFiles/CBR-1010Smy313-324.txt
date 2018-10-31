@@ -1,70 +1,303 @@
-Experiments On Adaptation-Guided Retrieval
-In Case-Based Design
-
-Barry Smyth1 and Mark T. Keane2
-
-1 Dublin Laboratory, Trinity College, Dublin 2, IRELAND
-(E-mail: barry.smyth@hdl.ie)
-2 Department of Computer Science, Trinity College, Dublin 2, IRELAND
-
-Abstract. Case-based reasoning (CBR) has been applied with some success to
-complex planning and design tasks. In such systems, the best case is retrieved and
-adapted to solve a particular target problem. Often, the best case is that which can
-be most easily adapted to the target problem (as the overhead in adaptation is
-generally very high). Standard CBR systems use semantic-similarity to retrieve
-cases, on the assumption that the most similar case is the easiest case to adapt.
-However, this assumption can be shown to be flawed. In this paper, we report a
-novel retrieval method, called adaptation-guided retrieval, that is sensitive to the
-ease-of-adaptation of cases. In the context of a CBR system for software-design,
-called Dйjа Vu, we show through a series of experiments that adaptation-guided
-retrieval is more accurate than standard retrieval techniques, that it scales well to
-large case-bases and that it results in more efficient overall problem-solving
-performance. The implications of this method and these results are discussed.
-
-
-6 References
-
-1.	Kolodner, J. (1989). Judging Which is the “Best” Case for a Case-Based
-Reasoner. Proceedings of the Case-Based Reasoning Workshop, Florida,
-U.S.A.
-
-2.	Goel, A. (1989) Integration of Case-Based Reasoning and Model-Based
-Reasoning for Adaptive Design Problem Solving. Ph.D. Thesis. Ohio State
-University, USA.
-
-3.	Birnbaum, L., Collins, G., Brand, M., Freed, M., Krulwich, B., Pryor, L.
-(1989) A Model-Based Approach to the Construction of Adaptive Case-Based
-Planning Systems. Proceedings of the Case-Based Reasoning Workshop,
-Florida, USA.
-
-4.	Fox, S. & Leake D. (1994) Using Introspective Reasoning to Guide Index
-Refinement. Proceedings of the Sixteenth international Conference of the
-Cognitive Science Conference, (pp. 324 - 329)
-
-5.	Leake, D. (1992) Constructive Similarity Assessment: Using Stored Cases
-to Define New Situations. Proceedings of the Fourteenth International
-Conference of the Cognitive Science Conference, (pp. 313 - 318)
-
-6.	Smyth, B., & Keane, M. (1994). Retrieving Adaptable Cases: The Role of
-Adaptation Knowledge in case Retrieval. Topics in Case-Based Reasoning,
-Springer Verlag (pp. 209-220).
-
-7.	Cain, T., Pazzani, M. J., and Silverstein, G. (1991) Using Domain
-Knowledge to Influence Similarity Judgements. Proceedings of the Case-Based 
-Reasoning Workshop, (pp. 191-198). Washington D.C., U.S.A.
-
-8.	Veloso, M. (1992) Learning by Analogical Reasoning in General Problem
-Solving. Ph.D. Thesis (CMU-CS-92-174). Carnegie Mellon University,
-Pittsburgh, USA.
-
-9.	Smyth, B., & Cunningham, P. (1992). Dйjа Vu: A Hierarchical Case-Based
-Reasoning System for Software Design. Proceedings of the 10th European
-Conference on Artificial Intelligence, (pp. 587 - 589). Vienna, Austria
-
-10.	Hammond, K. J. (1989). Planning from Memory. New York: Academic
-Press.
-
-11.	Francis, A.G., & Ram, A. (1993) Computational Models of the Utility
-Problem and their Application to a Utility Analysis of Case-based
-Reasoning. Proceedings of the Workshop on Knowledge Compilation and
-Speed-Up Learning.
+Experiments
+Adaptation-Guided
+Retrieval
+Case-Based
+Design
+Barry
+Smyth1
+Mark
+Keane2
+Dublin
+Laboratory
+Trinity
+College
+Dublin
+IRELAND
+E-mail
+barry.smyth@hdl.ie
+Department
+Computer
+Science
+Trinity
+College
+Dublin
+IRELAND
+Abstract
+Case-based
+reasoning
+been
+applied
+with
+some
+success
+complex
+planning
+design
+tasks
+such
+systems
+best
+case
+retrieved
+adapted
+solve
+particular
+target
+problem
+Often
+best
+case
+that
+which
+most
+easily
+adapted
+target
+problem
+overhead
+adaptation
+generally
+very
+high
+Standard
+systems
+semantic-similarity
+retrieve
+cases
+assumption
+that
+most
+similar
+case
+easiest
+case
+adapt
+However
+this
+assumption
+shown
+flawed
+this
+paper
+report
+novel
+retrieval
+method
+called
+adaptation-guided
+retrieval
+that
+sensitive
+ease-of-adaptation
+cases
+context
+system
+software-design
+called
+Dйjа
+show
+through
+series
+experiments
+that
+adaptation-guided
+retrieval
+more
+accurate
+than
+standard
+retrieval
+techniques
+that
+scales
+well
+large
+case-bases
+that
+results
+more
+efficient
+overall
+problem-solving
+performance
+implications
+this
+method
+these
+results
+discussed
+References
+Kolodner
+1989
+Judging
+Which
+“Best”
+Case
+Case-Based
+Reasoner
+Proceedings
+Case-Based
+Reasoning
+Workshop
+Florida
+U.S.A
+Goel
+1989
+Integration
+Case-Based
+Reasoning
+Model-Based
+Reasoning
+Adaptive
+Design
+Problem
+Solving
+Ph.D
+Thesis
+Ohio
+State
+University
+Birnbaum
+Collins
+Brand
+Freed
+Krulwich
+Pryor
+1989
+Model-Based
+Approach
+Construction
+Adaptive
+Case-Based
+Planning
+Systems
+Proceedings
+Case-Based
+Reasoning
+Workshop
+Florida
+Leake
+1994
+Using
+Introspective
+Reasoning
+Guide
+Index
+Refinement
+Proceedings
+Sixteenth
+international
+Conference
+Cognitive
+Science
+Conference
+Leake
+1992
+Constructive
+Similarity
+Assessment
+Using
+Stored
+Cases
+Define
+Situations
+Proceedings
+Fourteenth
+International
+Conference
+Cognitive
+Science
+Conference
+Smyth
+Keane
+1994
+Retrieving
+Adaptable
+Cases
+Role
+Adaptation
+Knowledge
+case
+Retrieval
+Topics
+Case-Based
+Reasoning
+Springer
+Verlag
+209-220
+Cain
+Pazzani
+Silverstein
+1991
+Using
+Domain
+Knowledge
+Influence
+Similarity
+Judgements
+Proceedings
+Case-Based
+Reasoning
+Workshop
+191-198
+Washington
+U.S.A
+Veloso
+1992
+Learning
+Analogical
+Reasoning
+General
+Problem
+Solving
+Ph.D
+Thesis
+CMU-CS-92-174
+Carnegie
+Mellon
+University
+Pittsburgh
+Smyth
+Cunningham
+1992
+Dйjа
+Hierarchical
+Case-Based
+Reasoning
+System
+Software
+Design
+Proceedings
+10th
+European
+Conference
+Artificial
+Intelligence
+Vienna
+Austria
+Hammond
+1989
+Planning
+from
+Memory
+York
+Academic
+Press
+Francis
+1993
+Computational
+Models
+Utility
+Problem
+their
+Application
+Utility
+Analysis
+Case-based
+Reasoning
+Proceedings
+Workshop
+Knowledge
+Compilation
+Speed-Up
+Learning

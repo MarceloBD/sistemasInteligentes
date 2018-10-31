@@ -1,57 +1,286 @@
-Retrieving Adaptable Cases
-The Role of Adaptation Knowledge in Case Retrieval
-
-
-Barry Smyth1 and Mark T. Keane2
-
-1 Hitachi Dublin Laboratory, O’Reilly Institute, Trinity College Dublin, Dublin 2,
-
+Retrieving
+Adaptable
+Cases
+Role
+Adaptation
+Knowledge
+Case
+Retrieval
+Barry
+Smyth1
+Mark
+Keane2
+Hitachi
+Dublin
+Laboratory
+O’Reilly
+Institute
+Trinity
+College
+Dublin
+Dublin
 Ireland
-
-2 Trinity College Dublin, Dublin 2, Ireland
-
-
-Abstract. The retrieval of a suitable case is of crucial importance to the
-success of case-based reasoning. A good criterion for judging "case suitability" 
-is bow complex a case will be to adapt. However, it has proven
-difficult to directly calculate this measure of case "adaptability" without 
-incurring the full cost of adaptation. This has led most researchers
-to exploit semantic similarity as a more tractable (albeit less accurate)
-answer to the question of case suitability.
-This paper describes an approach to case retrieval that allows case adaptability 
-to be accurately measured whilst overcoming the problems which,
-in the past, led to the adoption of seiuantic similarity based methods.
-We argue that our approach benefits from improved retrieval accuracy,
-flexibility, and greater overall problem solving efficacy. Our methods are
-implemented in Dйjа Vu, a case-based reasoning system for software design, 
-and we use examples from Dйjа Vu to demonstrate our ideas.
+Trinity
+College
+Dublin
+Dublin
+Ireland
+Abstract
+retrieval
+suitable
+case
+crucial
+importance
+success
+case-based
+reasoning
+good
+criterion
+judging
+case
+suitability
+complex
+case
+will
+adapt
+However
+proven
+difficult
+directly
+calculate
+this
+measure
+case
+adaptability
+without
+incurring
+full
+cost
+adaptation
+This
+most
+researchers
+exploit
+semantic
+similarity
+more
+tractable
+albeit
+less
+accurate
+answer
+question
+case
+suitability
+This
+paper
+describes
+approach
+case
+retrieval
+that
+allows
+case
+adaptability
+accurately
+measured
+whilst
+overcoming
+problems
+which
+past
+adoption
+seiuantic
+similarity
+based
+methods
+argue
+that
+approach
+benefits
+from
+improved
+retrieval
+accuracy
+flexibility
+greater
+overall
+problem
+solving
+efficacy
+methods
+implemented
+Dйjа
+case-based
+reasoning
+system
+software
+design
+examples
+from
+Dйjа
+demonstrate
+ideas
 References
-
-
-1.	K.J. Hammnond: Case-Based Planning. Academic Press (1989)
-2.	B. Smyth, and P. Cunningham: Dйjа Vu: A Hierarchical Case-Based Reasoning System 
-for Software Design. Proceedings of the 10th European Conference on Artificial
-Intelligence. Wiley (1992) 587—589
-3.	M.T. Keane: Analogical problem solving. Chichester: Ellis Horwood (1988)
-4.	D. Gentner: Structure-mapping: A theoretical framework for analogy. Cognitive
-Sciemice, 7. (1983) 155—170
-5.	R. Bareiss, J.A. King: Similarity Assessment in Case-based Reasoning. Proceedings
-of the Case-Based Reasoning Workshop. Morgan Kaufmann. (1989) 67—71.
-6.	P. Thagard, K.J. Holyoak, G. Nelson, D. Gochfeld: Analog Retrieval by Constraint
-Satisfaction. Artificial Intelligence, 46. (1990) 259—310
-7.	T. Cain, M.J. Pazzani, G. Silverstein: Using Domain Knowledge to Influence Similarity 
-Judgements. Proceedings of the Case-Based Reasoning Workshop. Morgan
-Kaufmann. (1991) 191—198
-8.	J. Kolodner: Jmmdging Which is the “Best” Case for a Case-Based Reasomier. Proceedimigs 
-of the Case-Based Reasoning Workshop. Morgan Kaufmann. (1989) 77—84
-9.	AK. Goel: Integration of Case-Based Reasoning and Model-Based Reasoning for
-Adaptive Desigmi Problemn Solving. PhD. Dissertation. Ohio State University (1989)
-10.	L. Birnbaum, G. Collins, M. Brand, M. Freed, B. Krulwich, L. Pryor: A Model-Based 
-Approach to the Construction of Adaptive Case-Based Planning Systems.
-Proceedings of the Case-Based Reasoning Workshop. Morgami Kaufmann (1988)
+Hammnond
+Case-Based
+Planning
+Academic
+Press
+1989
+Smyth
+Cunningham
+Dйjа
+Hierarchical
+Case-Based
+Reasoning
+System
+Software
+Design
+Proceedings
+10th
+European
+Conference
+Artificial
+Intelligence
+Wiley
+1992
+587—589
+Keane
+Analogical
+problem
+solving
+Chichester
+Ellis
+Horwood
+1988
+Gentner
+Structure-mapping
+theoretical
+framework
+analogy
+Cognitive
+Sciemice
+1983
+155—170
+Bareiss
+King
+Similarity
+Assessment
+Case-based
+Reasoning
+Proceedings
+Case-Based
+Reasoning
+Workshop
+Morgan
+Kaufmann
+1989
+67—71
+Thagard
+Holyoak
+Nelson
+Gochfeld
+Analog
+Retrieval
+Constraint
+Satisfaction
+Artificial
+Intelligence
+1990
+259—310
+Cain
+Pazzani
+Silverstein
+Using
+Domain
+Knowledge
+Influence
+Similarity
+Judgements
+Proceedings
+Case-Based
+Reasoning
+Workshop
+Morgan
+Kaufmann
+1991
 191—198
-11.	J. Hendler, A. Tate, M. Drummond: AI Planning: Systems amid Techniques. AI
-Magazine, 11. (1990) 61—77
-12.	K.P. Sycara, D. Navinchandra: Influences: A Thematic Abstraction for Creative
-Use of Multiple Cases. Proceedings of time Case-Based Reasoning Workshop. Morgan
-Kaufmann (1991) 133—144
+Kolodner
+Jmmdging
+Which
+“Best”
+Case
+Case-Based
+Reasomier
+Proceedimigs
+Case-Based
+Reasoning
+Workshop
+Morgan
+Kaufmann
+1989
+77—84
+Goel
+Integration
+Case-Based
+Reasoning
+Model-Based
+Reasoning
+Adaptive
+Desigmi
+Problemn
+Solving
+Dissertation
+Ohio
+State
+University
+1989
+Birnbaum
+Collins
+Brand
+Freed
+Krulwich
+Pryor
+Model-Based
+Approach
+Construction
+Adaptive
+Case-Based
+Planning
+Systems
+Proceedings
+Case-Based
+Reasoning
+Workshop
+Morgami
+Kaufmann
+1988
+191—198
+Hendler
+Tate
+Drummond
+Planning
+Systems
+amid
+Techniques
+Magazine
+1990
+61—77
+Sycara
+Navinchandra
+Influences
+Thematic
+Abstraction
+Creative
+Multiple
+Cases
+Proceedings
+time
+Case-Based
+Reasoning
+Workshop
+Morgan
+Kaufmann
+1991
+133—144

@@ -1,56 +1,270 @@
-Induction of Constraint Grammar-Rules Using
+Induction
+Constraint
+Grammar-Rules
+Using
 Progol
-
-Martin Eineborg1 and Nikolaj Lindberg2
-
-1 Telia Research AB,
-Spoken Language Processing,
-SE-123 86 Farsta, Sweden,
+Martin
+Eineborg1
+Nikolaj
+Lindberg2
+Telia
+Research
+Spoken
+Language
+Processing
+SE-123
+Farsta
+Sweden
 Martin.E.Eineborg@telia.se
-2 Centre for Speech Technology,
-Royal Institute of Technology,
-SE-100 44 Stockholm, Sweden,
+Centre
+Speech
+Technology
+Royal
+Institute
+Technology
+SE-100
+Stockholm
+Sweden
 nikolaj@speech.kth.se
-
-
-
-
-Abstract. The paper reports a pilot study aiming at inducing rules for
-disambiguating words with different possible part of speech readings in
-unrestricted Swedish text. The rules, which are inspired by Constraint
-Grammar, are learnt using the Progol inductive logic programming system. 
-The training data is sampled from the part of speech tagged one
-million word Stockholm-Umeе Corpus. The results show that the induction 
-of disambiguation rules using Progol is a realistic way of learning
-rules of good quality with a minimum of manual effort. When tested on
-unseen data, 97% of the words retain the correct reading after tagging
-leaving an ambiguity of 1.15 readings per word.
+Abstract
+paper
+reports
+pilot
+study
+aiming
+inducing
+rules
+disambiguating
+words
+with
+different
+possible
+part
+speech
+readings
+unrestricted
+Swedish
+text
+rules
+which
+inspired
+Constraint
+Grammar
+learnt
+using
+Progol
+inductive
+logic
+programming
+system
+training
+data
+sampled
+from
+part
+speech
+tagged
+million
+word
+Stockholm-Umeе
+Corpus
+results
+show
+that
+induction
+disambiguation
+rules
+using
+Progol
+realistic
+learning
+rules
+good
+quality
+with
+minimum
+manual
+effort
+When
+tested
+unseen
+data
+words
+retain
+correct
+reading
+after
+tagging
+leaving
+ambiguity
+1.15
+readings
+word
 References
-
-1.	Eric Brill. Some advances in transformation-based part of speech tagging. In
-Proceedings of the Twelfth National Conference on Artificial Intelligence (AAAI-
-94), Seattle, Wa., 1994.
-2.	James Cussens. Part of speech tagging using Progol. In Proceedings of the 7th
-International Workshop on Inductive Logic Programming (ILP-97), pages 93—108,
-1997.
-3.	Eva Ejerhed, Gunnel Kдllgren, Wennstedt Ola, and Magnus Astrцm. The Linguistic 
-Annotation System of the Stockholm- Umeе Project. Department of General
-Linguistics, University of Umeе, 1992.
-4.	Fred Karisson, Atro Voutilainen, Julia Heikkilд, and Arto Anttila, editors. Constraint 
-Grammar: A language-independent system for parsing unrestricted text.
-Mouton de Gruyter, Berlin and New York, 1995.
-5.	Oliver Manson. QTAG—A portable probabilistic tagger. Corpus Research, The
-University of Birmingham, U.K., 1997.
-6.	Stephen Muggleton. Inverse entainment and Progol. New Generation Computing
-Journal, 13:245—286, 1995.
-7.	Daniel Ridings. SUC and the Brill tagger. Technical Report GU-ISS-98-1, Department 
-of Swedish, Gцteborg University, 1998.
-8.	Christer Samuelsson, Pasi Tapanainen, and Atro Voutilainen. Inducing Constraint
-Grammars. In Miclet Laurent and de la Higuera Colin, editors, Grammatical
-Inference: Learning Syntax from Sentences, pages 146—155. Springer Verlag, 1996.
-9.	Christer Samuelsson and Atro Voutilainen. Comparing a linguistic and a stochastic
-tagger. In Proceedings of the 35th Annual Meeting of the Association for Computational 
-Linguistics and 8th Conference of the European Chapter of the Association
-for Computational Linguistics (A CL -EA CL ‘97), pages 246—253, 1997.
-10.	Pasi Tapanainen. The Constraint Grammar Parser CG-2. Department of General
-Linguistics, University of Helsinki, 1996.
+Eric
+Brill
+Some
+advances
+transformation-based
+part
+speech
+tagging
+Proceedings
+Twelfth
+National
+Conference
+Artificial
+Intelligence
+AAAI
+Seattle
+1994
+James
+Cussens
+Part
+speech
+tagging
+using
+Progol
+Proceedings
+International
+Workshop
+Inductive
+Logic
+Programming
+ILP-97
+pages
+93—108
+1997
+Ejerhed
+Gunnel
+Kдllgren
+Wennstedt
+Magnus
+Astrцm
+Linguistic
+Annotation
+System
+Stockholm
+Umeе
+Project
+Department
+General
+Linguistics
+University
+Umeе
+1992
+Fred
+Karisson
+Atro
+Voutilainen
+Julia
+Heikkilд
+Arto
+Anttila
+editors
+Constraint
+Grammar
+language-independent
+system
+parsing
+unrestricted
+text
+Mouton
+Gruyter
+Berlin
+York
+1995
+Oliver
+Manson
+QTAG—A
+portable
+probabilistic
+tagger
+Corpus
+Research
+University
+Birmingham
+1997
+Stephen
+Muggleton
+Inverse
+entainment
+Progol
+Generation
+Computing
+Journal
+13:245—286
+1995
+Daniel
+Ridings
+Brill
+tagger
+Technical
+Report
+GU-ISS-98-1
+Department
+Swedish
+Gцteborg
+University
+1998
+Christer
+Samuelsson
+Pasi
+Tapanainen
+Atro
+Voutilainen
+Inducing
+Constraint
+Grammars
+Miclet
+Laurent
+Higuera
+Colin
+editors
+Grammatical
+Inference
+Learning
+Syntax
+from
+Sentences
+pages
+146—155
+Springer
+Verlag
+1996
+Christer
+Samuelsson
+Atro
+Voutilainen
+Comparing
+linguistic
+stochastic
+tagger
+Proceedings
+35th
+Annual
+Meeting
+Association
+Computational
+Linguistics
+Conference
+European
+Chapter
+Association
+Computational
+Linguistics
+pages
+246—253
+1997
+Pasi
+Tapanainen
+Constraint
+Grammar
+Parser
+CG-2
+Department
+General
+Linguistics
+University
+Helsinki
+1996

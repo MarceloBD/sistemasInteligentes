@@ -1,75 +1,320 @@
-Analysis of the Evolution of Peer­to­Peer Systems
-
-David Liben­Nowell, Hari Balakrishnan, David Karger
-Laboratory for Computer Science
-Massachusetts Institute of Technology
-200 Technology Square
-Cambridge, MA 02139 USA
+Analysis
+Evolution
+Peer­to­Peer
+Systems
+David
+Liben­Nowell
+Hari
+Balakrishnan
+David
+Karger
+Laboratory
+Computer
+Science
+Massachusetts
+Institute
+Technology
+Technology
+Square
+Cambridge
+02139
 fdln,hari,kargerg@lcs.mit.edu
-
 ABSTRACT
-In this paper, we give a theoretical analysis of peer­to­peer (P2P)
-networks operating in the face of concurrent joins and unexpected
-departures. We focus on Chord, a recently developed P2P system
-that implements a distributed hash table abstraction, and study the
-process by which Chord maintains its distributed state as nodes join
-and leave the system. We argue that traditional performance mea­sures 
-based on run­time are uninformative for a continually running
-P2P network, and that the rate at which nodes in the network need
-to participate to maintain system state is a more useful metric. We
-give a general lower bound on this rate for a network to remain con­nected, 
-and prove that an appropriately modified version of Chord's
-maintenance rate is within a logarithmic factor of the optimum rate.
-
+this
+paper
+give
+theoretical
+analysis
+peer­to­peer
+networks
+operating
+face
+concurrent
+joins
+unexpected
+departures
+focus
+Chord
+recently
+developed
+system
+that
+implements
+distributed
+hash
+table
+abstraction
+study
+process
+which
+Chord
+maintains
+distributed
+state
+nodes
+join
+leave
+system
+argue
+that
+traditional
+performance
+mea­sures
+based
+run­time
+uninformative
+continually
+running
+network
+that
+rate
+which
+nodes
+network
+need
+participate
+maintain
+system
+state
+more
+useful
+metric
+give
+general
+lower
+bound
+this
+rate
+network
+remain
+con­nected
+prove
+that
+appropriately
+modified
+version
+Chord's
+maintenance
+rate
+within
+logarithmic
+factor
+optimum
+rate
 REFERENCES
-[1] DABEK, F., BRUNSKILL, E., KAASHOEK, M. F., KARGER, D.,
-MORRIS, R., STOICA, I., AND BALAKRISHNAN, H. Building
-peer­to­peer systems with Chord, a distributed location service. In
-Proc. IEEE Workshop on Hot Topics in Operating Systems
-(HotOS­VIII) (2001).
-[2] DABEK, F., KAASHOEK, M. F., KARGER, D., MORRIS, R., AND
-STOICA, I. Wide­area cooperative storage with CFS. In Proc. SOSP
-(2001).
-[3] DRUSCHEL, P., AND ROWSTRON, A. Past: Persistent and
-anonymous storage in a peer­to­peer networking environment. In
-Proceedings of the 8th IEEE Workshop on Hot Topics in Operating
-Systems (HotOS­VIII) (2001), pp. 65--70.
-[4] FIAT, A., AND SAIA, J. Censorship resistant peer­to­peer content
-addressable networks. In Proc. SODA (2002).
-[5] KARGER, D., LEHMAN, E., LEIGHTON, F., LEVINE, M., LEWIN,
-D., AND PANIGRAHY, R. Consistent hashing and random trees:
-Distributed caching protocols for relieving hot spots on the World
-Wide Web. In Proc. STOC (1997).
-[6] KUBIATOWICZ, J., BINDEL, D., CHEN, Y., CZERWINSKI, S.,
-EATON, P., GEELS, D., GUMMADI, R., RHEA, S.,
-WEATHERSPOON, H., WEIMER, W., WELLS, C., AND ZHAO, B.
-OceanStore: An architecture for global­scale persistent storage. In
-Proc. ASPLOS (2000).
-[7] LEWIN, D. Consistent hashing and random trees: Algorithms for
-caching in distributed networks. Master's thesis, Department of
-EECS, MIT, 1998. Available at the MIT Library,
-http://thesis.mit.edu/.
-[8] PANDURANGAN, G., RAGHAVAN, P., AND UPFAL, E. Building
-low­diameter P2P networks. In Proc. FOCS (2001).
-[9] PLAXTON, C., RAJARAMAN, R., AND RICHA, A. Accessing
-nearby copies of replicated objects in a distributed environment. In
-Proc. SPAA (1997).
-[10] RATNASAMY, S., FRANCIS, P., HANDLEY, M., KARP, R., AND
-SHENKER, S. A scalable content­addressable network. In Proc.
-SIGCOMM (2001).
-[11] SAIA, J., FIAT, A., GRIBBLE, S., KARLIN, A. R., AND SAROIU,
-S. Dynamically fault­tolerant content addressable networks. In Proc.
-IPTPS (2002).
-[12] STOICA, I., MORRIS, R., KARGER, D., KAASHOEK, M. F., AND
-BALAKRISHNAN, H. Chord: A scalable peer­to­peer lookup service
-for internet applications. In Proc. SIGCOMM (2001).
-[13] STOICA, I., MORRIS, R., LIBEN­NOWELL, D., KARGER, D.,
-KAASHOEK, M. F., DABEK, F., AND BALAKRISHNAN, H. Chord:
-A scalable peer­to­peer lookup service for internet applications.
-Tech. Rep. TR­819, MIT LCS, 2001.
-http://www.pdos.lcs.mit.edu/chord/papers/.
-[14] ZHAO, B., KUBIATOWICZ, J., AND JOSEPH, A. Tapestry: An
-infrastructure for fault­tolerant wide­area location and routing. Tech.
-Rep. UCB/CSD­01­1141, Computer Science Division, U. C.
-Berkeley, Apr. 2001.
-
+DABEK
+BRUNSKILL
+KAASHOEK
+KARGER
+MORRIS
+STOICA
+BALAKRISHNAN
+Building
+peer­to­peer
+systems
+with
+Chord
+distributed
+location
+service
+Proc
+IEEE
+Workshop
+Topics
+Operating
+Systems
+HotOS­VIII
+2001
+DABEK
+KAASHOEK
+KARGER
+MORRIS
+STOICA
+Wide­area
+cooperative
+storage
+with
+Proc
+SOSP
+2001
+DRUSCHEL
+ROWSTRON
+Past
+Persistent
+anonymous
+storage
+peer­to­peer
+networking
+environment
+Proceedings
+IEEE
+Workshop
+Topics
+Operating
+Systems
+HotOS­VIII
+2001
+65--70
+FIAT
+SAIA
+Censorship
+resistant
+peer­to­peer
+content
+addressable
+networks
+Proc
+SODA
+2002
+KARGER
+LEHMAN
+LEIGHTON
+LEVINE
+LEWIN
+PANIGRAHY
+Consistent
+hashing
+random
+trees
+Distributed
+caching
+protocols
+relieving
+spots
+World
+Wide
+Proc
+STOC
+1997
+KUBIATOWICZ
+BINDEL
+CHEN
+CZERWINSKI
+EATON
+GEELS
+GUMMADI
+RHEA
+WEATHERSPOON
+WEIMER
+WELLS
+ZHAO
+OceanStore
+architecture
+global­scale
+persistent
+storage
+Proc
+ASPLOS
+2000
+LEWIN
+Consistent
+hashing
+random
+trees
+Algorithms
+caching
+distributed
+networks
+Master's
+thesis
+Department
+EECS
+1998
+Available
+Library
+http://thesis.mit.edu
+PANDURANGAN
+RAGHAVAN
+UPFAL
+Building
+low­diameter
+networks
+Proc
+FOCS
+2001
+PLAXTON
+RAJARAMAN
+RICHA
+Accessing
+nearby
+copies
+replicated
+objects
+distributed
+environment
+Proc
+SPAA
+1997
+RATNASAMY
+FRANCIS
+HANDLEY
+KARP
+SHENKER
+scalable
+content­addressable
+network
+Proc
+SIGCOMM
+2001
+SAIA
+FIAT
+GRIBBLE
+KARLIN
+SAROIU
+Dynamically
+fault­tolerant
+content
+addressable
+networks
+Proc
+IPTPS
+2002
+STOICA
+MORRIS
+KARGER
+KAASHOEK
+BALAKRISHNAN
+Chord
+scalable
+peer­to­peer
+lookup
+service
+internet
+applications
+Proc
+SIGCOMM
+2001
+STOICA
+MORRIS
+LIBEN­NOWELL
+KARGER
+KAASHOEK
+DABEK
+BALAKRISHNAN
+Chord
+scalable
+peer­to­peer
+lookup
+service
+internet
+applications
+Tech
+TR­819
+2001
+http://www.pdos.lcs.mit.edu/chord/papers
+ZHAO
+KUBIATOWICZ
+JOSEPH
+Tapestry
+infrastructure
+fault­tolerant
+wide­area
+location
+routing
+Tech
+UCB/CSD­01­1141
+Computer
+Science
+Division
+Berkeley
+2001

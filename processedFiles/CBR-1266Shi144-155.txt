@@ -1,42 +1,191 @@
-Lessons Learned from Deployed CBR Systems
-and Design Decisions Made in Building
-a Commercial CBR Tool
-
-Hideo Shimazu and Yosuke Takashima
-
-Information Technology Research Laboratories. NEC Corporation.
-4-1-1 Miyazaki. Miyamae. Kawasaki, 216. Japan
-{shimazu, yosuke}@joke.cl.nec.co.jp
-
-
-
-
-Abstract. This paper reports our experiences in several CBR system
-building projects. Based on the lessons learned in these projects. we
-have developed a help desk support tool. Help Desk Builder. It consists
-of a knowledge management tool and a customer information manage-merit tool. 
-The knowledge management tool includes case-based retrieval
-functions. This paper focuses on the design decisions and architecture of
-the case-based functions in Help Desk Builder.
+Lessons
+Learned
+from
+Deployed
+Systems
+Design
+Decisions
+Made
+Building
+Commercial
+Tool
+Hideo
+Shimazu
+Yosuke
+Takashima
+Information
+Technology
+Research
+Laboratories
+Corporation
+4-1-1
+Miyazaki
+Miyamae
+Kawasaki
+Japan
+shimazu
+yosuke}@joke.cl.nec.co.jp
+Abstract
+This
+paper
+reports
+experiences
+several
+system
+building
+projects
+Based
+lessons
+learned
+these
+projects
+have
+developed
+help
+desk
+support
+tool
+Help
+Desk
+Builder
+consists
+knowledge
+management
+tool
+customer
+information
+manage-merit
+tool
+knowledge
+management
+tool
+includes
+case-based
+retrieval
+functions
+This
+paper
+focuses
+design
+decisions
+architecture
+case-based
+functions
+Help
+Desk
+Builder
 References
-
-1.	Kitano, H., Shihata, A., Shimazu. H.. Kajihara J., Sato, A., Building Large-Scale
-Corporate-Wide Case-Based Systems: Integration of Organizational and Machine
-Executable Algorithms. In Proceedings of the National Conference on Artificial
-Intelligence. 1992 (AAAI-92)
-2.	Kitano, H and Shimazu, H, The Experience Sharing Architecture: A Case Study
-in Corporate-Wide Case-Based Software Quality Control. In Case-Based Reasoning
-Experiences, Lessons. & Future Directions, ed D.B. Leake, AAAI Press/The MIT
-Press, 1996
-3.	Kolodner, J., Case-Based Reasoning, Morgan Kaufmann. 1993.
-4.	Schank, R., and Abelson, R.P., 1977. Scripts, Plans, Goals, and Understanding,
-Erlbaum, Hillsdale. N.J.. 1977
-5.	Shimazu, H., Kitano, H., and Shibata, A., Retrieving Cases from Relational
-DataBase: Another Stride Towards Corporate-Wide Case-Based Systems, In Pro-
-ceedings of the International Joint Conference on Artificial Intelligence, 1993 (IJCAI
-93)
-6.	Shimazu, H., Shibata. A., and Nihei, K.. Case-Based Retrieval Interface Adapted
-to Customer-Initiated Dialogues in Help Desk Operations, In Proceedings of the
-National Conference on Artificial Intelligence, 1994 (AAAI-94)
-7.	Shimazu and Takashima, Detecting Discontinuities in Case-Bases, In Proceedings
-of the National Conference on Artificial Intelligence, 1996 (AAAI-96)
+Kitano
+Shihata
+Shimazu
+Kajihara
+Sato
+Building
+Large-Scale
+Corporate-Wide
+Case-Based
+Systems
+Integration
+Organizational
+Machine
+Executable
+Algorithms
+Proceedings
+National
+Conference
+Artificial
+Intelligence
+1992
+AAAI-92
+Kitano
+Shimazu
+Experience
+Sharing
+Architecture
+Case
+Study
+Corporate-Wide
+Case-Based
+Software
+Quality
+Control
+Case-Based
+Reasoning
+Experiences
+Lessons
+Future
+Directions
+Leake
+AAAI
+Press/The
+Press
+1996
+Kolodner
+Case-Based
+Reasoning
+Morgan
+Kaufmann
+1993
+Schank
+Abelson
+1977
+Scripts
+Plans
+Goals
+Understanding
+Erlbaum
+Hillsdale
+1977
+Shimazu
+Kitano
+Shibata
+Retrieving
+Cases
+from
+Relational
+DataBase
+Another
+Stride
+Towards
+Corporate-Wide
+Case-Based
+Systems
+ceedings
+International
+Joint
+Conference
+Artificial
+Intelligence
+1993
+IJCAI
+Shimazu
+Shibata
+Nihei
+Case-Based
+Retrieval
+Interface
+Adapted
+Customer-Initiated
+Dialogues
+Help
+Desk
+Operations
+Proceedings
+National
+Conference
+Artificial
+Intelligence
+1994
+AAAI-94
+Shimazu
+Takashima
+Detecting
+Discontinuities
+Case-Bases
+Proceedings
+National
+Conference
+Artificial
+Intelligence
+1996
+AAAI-96

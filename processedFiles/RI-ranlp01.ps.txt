@@ -1,110 +1,342 @@
-An Unsupervised Semantic Tagger Applied to German
-
-Paul Buitelaar, Jan Alexandersson, Tilman Jaeger, Stephan Lesch, Norbert Pfleger, Diana Raileanu
-DFKI GmbH
-Stuhlsatzenhausweg 3
-D­66123 Saarbruecken, Germany
-{paulb,janal,jaeger,lesch,pfleger,raileanu}@dfki.de
-Tanja von den Berg, Kerstin Klцckner, Holger Neis, Hubert Schlarb
-Department of Computational Linguistics,
-Universitдt des Saarlandes
-Postfach 151150
-66041 Saarbrьcken, Germany
-{kekl,hone,husc}@coli.uni­sb.de
-
+Unsupervised
+Semantic
+Tagger
+Applied
+German
+Paul
+Buitelaar
+Alexandersson
+Tilman
+Jaeger
+Stephan
+Lesch
+Norbert
+Pfleger
+Diana
+Raileanu
+DFKI
+GmbH
+Stuhlsatzenhausweg
+D­66123
+Saarbruecken
+Germany
+paulb,janal,jaeger,lesch,pfleger,raileanu}@dfki.de
+Tanja
+Berg
+Kerstin
+Klцckner
+Holger
+Neis
+Hubert
+Schlarb
+Department
+Computational
+Linguistics
+Universitдt
+Saarlandes
+Postfach
+151150
+66041
+Saarbrьcken
+Germany
+kekl,hone,husc}@coli.uni­sb.de
 Abstract
-We describe an unsupervised
-semantic tagger, applied to German,
-but which could be used with any
-language for which a corresponding
-"XNet" (WordNet, GermaNet, etc.),
-POS tagger and morphological
-analyzer are available.
-Disambiguation is performed by
-comparing co­occurrence weights on
-pairs of semantic classes (synsets
-from GermaNet). Precision is around
-67% at a recall of around 65% (for all
-ambiguous words ­­ 81% for all words
-at a recall of 80%). Our results show
-the influence of context size and of
-semantic class frequency in the
-training corpus.
-
+describe
+unsupervised
+semantic
+tagger
+applied
+German
+which
+could
+used
+with
+language
+which
+corresponding
+XNet
+WordNet
+GermaNet
+tagger
+morphological
+analyzer
+available
+Disambiguation
+performed
+comparing
+co­occurrence
+weights
+pairs
+semantic
+classes
+synsets
+from
+GermaNet
+Precision
+around
+recall
+around
+ambiguous
+words
+words
+recall
+results
+show
+influence
+context
+size
+semantic
+class
+frequency
+training
+corpus
 References
-Agirre E., and Rigau G. 1996. Word sense
-disambiguation using conceptual density. In
-Proceedings of COLING'96, pages 16­­22,
-Copenhagen, Denmark.
-Brants, T. 2000. TnT ­ A Statistical Part­ of­
-Speech Tagger. In: Proceedings of the 6 th
-Applied Natural Language Processing
-Conference, Seattle, WA.
-Brants, T., and W. Skut. 1998. Automation of
-Treebank Annotation. In: Proceedings of the
-Conference on New Methods in Language
-Processing (NeMLaP­3), Australia.
-Buitelaar, P. 1998. CoreLex: Systematic
-Polysemy and Underspecification. PhD
-Dissertation , Brandeis University.
-Fellbaum Chr. 1997. Analysis of a hand­
-tagging task. Proceedings of ANLP­97
-Workshop on Tagging Text with Lexical
-Semantics: Why, What, and How? Washington
-D.C., USA.
-Hirst, G. 1988. Semantic Interpretation and
-the Resolution of Ambiguity. Cambridge
-University Press.
-Ide, N., & Vйronis, J. (Eds.). 1998. Word
-Sense Disambiguation. Special issue of
-Computational Linguistics, 24(1).
-Kilgarriff, A. 1997. I don't believe in word
-senses. Computers and the Humanities 31 (2),
-pp 91­­113.
-Kilgarriff, A., and M. Palmer. 2000.
-Introduction to the special issue on SENSEVAL.
-Computers and the Humanities 34(1/2):1­13.
-Kilgarriff, A. and Rosenzweig J. 2000.
-English SENSEVAL: Report and Results. In:
-Proceedings of LREC2000, Athens, Greece.
-Lesk, M.E. 1986. Automated sense
-disambiguation using machine­readable
-dictionaries: How to tell a pine cone from an ice
-cone. In Proceedings of the SIGDOC
-Conference.
-Miller G., Chodorow M., Landes S., Leacock
-C., Thomas R. 1994 Using a Semantic
-Concordance for Sense Identification. In: ARPA
-Workshop on Human Language Technology,
-Plainsboro NJ.
-Miller, G.A. 1995. WordNet: A Lexical
-Database for English. Communications of the
-ACM 11.
-Ng, H.T., and H.B. Lee. 1996. Integrating
-multiple knowledge sources to disambiguate
-word sense: An exemplar­based approach. In
-Proceedings of ACL96.
-Dominique Petitpierre and Graham Russell,
-1995. MMORPH ­ The Multext Morphology
-Program. Multext deliverable report for the task
-2.3.1, ISSCO, University of Geneva.
-Resnik, P. 1997. Selectional preference and
-sense disambiguation. In Proceedings of the
-ACL SIGLEX Workshop on Tagging Text with
-Lexical Semantics: Why, What, and How?
-Washington, D.C., USA.
-Seligman, M., Alexandersson J. and Jokinen
-K. 1999. Tracking Morphological and Semantic
-Co­occurrences in Spontaneous Dialogues In:
-Proceedings of the IJCAI Workshop
-Knowledge and Reasoning in Practical Dialogue
-Systems, Stockholm, Sweden.
-Small, S.L. 1980. Word Expert Parsing: A
-Theory of Distributed Word­based Natural
-Language Understanding. Ph.D. thesis, The
-University of Maryland, Baltimore, MD.
-Yarowsky, D. 1992. Word­sense
-disambiguation using statistical models of
-Roget's categories. In Proceedings of COLING­
-92, Nantes, France.
-
+Agirre
+Rigau
+1996
+Word
+sense
+disambiguation
+using
+conceptual
+density
+Proceedings
+COLING'96
+pages
+16­­22
+Copenhagen
+Denmark
+Brants
+2000
+Statistical
+Part­
+Speech
+Tagger
+Proceedings
+Applied
+Natural
+Language
+Processing
+Conference
+Seattle
+Brants
+Skut
+1998
+Automation
+Treebank
+Annotation
+Proceedings
+Conference
+Methods
+Language
+Processing
+NeMLaP­3
+Australia
+Buitelaar
+1998
+CoreLex
+Systematic
+Polysemy
+Underspecification
+Dissertation
+Brandeis
+University
+Fellbaum
+1997
+Analysis
+hand­
+tagging
+task
+Proceedings
+ANLP­97
+Workshop
+Tagging
+Text
+with
+Lexical
+Semantics
+What
+Washington
+Hirst
+1988
+Semantic
+Interpretation
+Resolution
+Ambiguity
+Cambridge
+University
+Press
+Vйronis
+1998
+Word
+Sense
+Disambiguation
+Special
+issue
+Computational
+Linguistics
+24(1
+Kilgarriff
+1997
+don't
+believe
+word
+senses
+Computers
+Humanities
+91­­113
+Kilgarriff
+Palmer
+2000
+Introduction
+special
+issue
+SENSEVAL
+Computers
+Humanities
+34(1/2):1­13
+Kilgarriff
+Rosenzweig
+2000
+English
+SENSEVAL
+Report
+Results
+Proceedings
+LREC2000
+Athens
+Greece
+Lesk
+1986
+Automated
+sense
+disambiguation
+using
+machine­readable
+dictionaries
+tell
+pine
+cone
+from
+cone
+Proceedings
+SIGDOC
+Conference
+Miller
+Chodorow
+Landes
+Leacock
+Thomas
+1994
+Using
+Semantic
+Concordance
+Sense
+Identification
+ARPA
+Workshop
+Human
+Language
+Technology
+Plainsboro
+Miller
+1995
+WordNet
+Lexical
+Database
+English
+Communications
+1996
+Integrating
+multiple
+knowledge
+sources
+disambiguate
+word
+sense
+exemplar­based
+approach
+Proceedings
+ACL96
+Dominique
+Petitpierre
+Graham
+Russell
+1995
+MMORPH
+Multext
+Morphology
+Program
+Multext
+deliverable
+report
+task
+2.3.1
+ISSCO
+University
+Geneva
+Resnik
+1997
+Selectional
+preference
+sense
+disambiguation
+Proceedings
+SIGLEX
+Workshop
+Tagging
+Text
+with
+Lexical
+Semantics
+What
+Washington
+Seligman
+Alexandersson
+Jokinen
+1999
+Tracking
+Morphological
+Semantic
+Co­occurrences
+Spontaneous
+Dialogues
+Proceedings
+IJCAI
+Workshop
+Knowledge
+Reasoning
+Practical
+Dialogue
+Systems
+Stockholm
+Sweden
+Small
+1980
+Word
+Expert
+Parsing
+Theory
+Distributed
+Word­based
+Natural
+Language
+Understanding
+Ph.D
+thesis
+University
+Maryland
+Baltimore
+Yarowsky
+1992
+Word­sense
+disambiguation
+using
+statistical
+models
+Roget's
+categories
+Proceedings
+COLING­
+Nantes
+France

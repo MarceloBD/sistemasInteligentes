@@ -1,63 +1,282 @@
-An Efficient and Flexible Format for Linguistic and Semantic Annotation
-
-Sџpela Vintar § , Paul Buitelaar § , Bдrbel Ripplinger * ,
-Bogdan Sacaleanu § , Diana Raileanu § , Detlef Prescher §
-§ DFKI GmbH
-Stuhlsatzenhausweg 3,
-66123 Saarbrьcken, Germany
-{ vintar, paulb, bogdan, raileanu, prescher}@dfki.de
-* Eurospider Information Technology AG
-Schaffhauserstrasse 18
-CH­8006 Zьrich, Switzerland
+Efficient
+Flexible
+Format
+Linguistic
+Semantic
+Annotation
+Sџpela
+Vintar
+Paul
+Buitelaar
+Bдrbel
+Ripplinger
+Bogdan
+Sacaleanu
+Diana
+Raileanu
+Detlef
+Prescher
+DFKI
+GmbH
+Stuhlsatzenhausweg
+66123
+Saarbrьcken
+Germany
+vintar
+paulb
+bogdan
+raileanu
+prescher}@dfki.de
+Eurospider
+Information
+Technology
+Schaffhauserstrasse
+CH­8006
+Zьrich
+Switzerland
 ripplinger@eurospider.ch
-
 Abstract
-The paper describes an XML annotation format and tool developed within the MUCHMORE project. The annotation scheme was
-designed specifically for the purposes of Cross­Lingual Information Retrieval in the medical domain so as to allow both efficient and
-flexible access to layers of information. We use a parallel English­German corpus of medical abstracts and annotate it with linguistic
-information (tokenisation, part­of­speech tagging, lemmatisation and decomposition, phrase recognition, grammatical functions) as
-well as semantic information from various sources. The annotation of medical terms/concepts, semantic types and semantic relations is
-based on the Unified Medical Language System (UMLS). Additionally, we use EuroWordNet as a general­language resource in
-annotating word senses and to compare domain­specific and general language use. A major aim of the project is also to complement
-existing ontological resources by extracting new terms and new semantic relations. We present the annotation scheme, which is
-conceptually related to stand­off annotation, and describe our tool for automatic semantic annotation.
-
+paper
+describes
+annotation
+format
+tool
+developed
+within
+MUCHMORE
+project
+annotation
+scheme
+designed
+specifically
+purposes
+Cross­Lingual
+Information
+Retrieval
+medical
+domain
+allow
+both
+efficient
+flexible
+access
+layers
+information
+parallel
+English­German
+corpus
+medical
+abstracts
+annotate
+with
+linguistic
+information
+tokenisation
+part­of­speech
+tagging
+lemmatisation
+decomposition
+phrase
+recognition
+grammatical
+functions
+well
+semantic
+information
+from
+various
+sources
+annotation
+medical
+terms/concepts
+semantic
+types
+semantic
+relations
+based
+Unified
+Medical
+Language
+System
+UMLS
+Additionally
+EuroWordNet
+general­language
+resource
+annotating
+word
+senses
+compare
+domain­specific
+general
+language
+major
+project
+also
+complement
+existing
+ontological
+resources
+extracting
+terms
+semantic
+relations
+present
+annotation
+scheme
+which
+conceptually
+related
+stand­off
+annotation
+describe
+tool
+automatic
+semantic
+annotation
 References
-Bird S. and Liberman, M., 2001. A Formal Framework for
-Linguistic Annotation. Speech Communication 33 (1,2),
-23­60.
-Brants, T., 2000. TnT ­ A Statistical Part­of­Speech
-Tagger. In: Proceedings of 6 th ANLP Conference,
-Seattle, WA.
-Dybkjжr, L., Bernsen, N.O., Dybkjжr, H., McKelvie, D.
-and Mengel, A. 1998. The MATE Markup Framework.
-MATE Deliverable D1.2, November 1998.
-http://mate.nis.sdu.dk/information/d12/
-Ide, N., Bonhomme, P., Romary, L. 2000. XCES: An
-XML­based Standard for Linguistic Corpora..
-Proceedings of the Second Language Resources
-and Evaluation Conference (LREC), Athens, Greece,
-825­30.
-McKelvie D., Brew C. and Thompson H. 1997. Using
-SGML as a Basis for Data­Intensive NLP. In
-Proceedings of ANLP97, Washington, DC.
-Petitpierre, D. and Russell, G. 1995. MMORPH ­ The
-Multext Morphology Program. Multext deliverable
-report for the task 2.3.1, ISSCO, University of Geneva.
-Ripplinger B., Vintar S. and Buitelaar P. 2002. Cross­
-Lingual Medical Information Retrieval through
-Semantic Annotation. Proceedings of the EFMI
-Workshop on Natural Language Processing in
-Biomedical Applications, EFMI, ??.
-Skut W. and Brants T. 1998. A Maximum Entropy partial
-parser for unrestricted text. In Proceedings of the 6th
-ACL Workshop on Very Large Corpora (WVLC),
-Montreal.
-Thompson H. and McKelvie D. 1997. Hyperlink
-semantics for standoff markup of read­only documents.
-In Proceedings of SGML Europe 97, Barcelona.
-Vossen, P. 1997. EuroWordNet: a multilingual database
-for information retrieval. In: Proceedings of the
-DELOS workshop on Cross­language Information
-Retrieval, March 5­7, 1997, Zurich.
+Bird
+Liberman
+2001
+Formal
+Framework
+Linguistic
+Annotation
+Speech
+Communication
+23­60
+Brants
+2000
+Statistical
+Part­of­Speech
+Tagger
+Proceedings
+ANLP
+Conference
+Seattle
+Dybkjжr
+Bernsen
+Dybkjжr
+McKelvie
+Mengel
+1998
+MATE
+Markup
+Framework
+MATE
+Deliverable
+D1.2
+November
+1998
+http://mate.nis.sdu.dk/information/d12
+Bonhomme
+Romary
+2000
+XCES
+XML­based
+Standard
+Linguistic
+Corpora
+Proceedings
+Second
+Language
+Resources
+Evaluation
+Conference
+LREC
+Athens
+Greece
+825­30
+McKelvie
+Brew
+Thompson
+1997
+Using
+SGML
+Basis
+Data­Intensive
+Proceedings
+ANLP97
+Washington
+Petitpierre
+Russell
+1995
+MMORPH
+Multext
+Morphology
+Program
+Multext
+deliverable
+report
+task
+2.3.1
+ISSCO
+University
+Geneva
+Ripplinger
+Vintar
+Buitelaar
+2002
+Cross­
+Lingual
+Medical
+Information
+Retrieval
+through
+Semantic
+Annotation
+Proceedings
+EFMI
+Workshop
+Natural
+Language
+Processing
+Biomedical
+Applications
+EFMI
+Skut
+Brants
+1998
+Maximum
+Entropy
+partial
+parser
+unrestricted
+text
+Proceedings
+Workshop
+Very
+Large
+Corpora
+WVLC
+Montreal
+Thompson
+McKelvie
+1997
+Hyperlink
+semantics
+standoff
+markup
+read­only
+documents
+Proceedings
+SGML
+Europe
+Barcelona
+Vossen
+1997
+EuroWordNet
+multilingual
+database
+information
+retrieval
+Proceedings
+DELOS
+workshop
+Cross­language
+Information
+Retrieval
+March
+1997
+Zurich
 from

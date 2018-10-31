@@ -1,34 +1,160 @@
-Refining Complete Hypotheses in ILP
-
-Ivan Bratko
-
-
-University of Ljubljana, Faculty of Computer and Information Sc.
-Trzaska 25, 1000 Ljubljana, Slovenia
+Refining
+Complete
+Hypotheses
+Ivan
+Bratko
+University
+Ljubljana
+Faculty
+Computer
+Information
+Trzaska
+1000
+Ljubljana
+Slovenia
 bratko@fri.uni-lj.si
-
-
-
-Abstract. Most ILP systems employ the covering algorithm whereby
-hypotheses are constructed iteratively clause by clause. Typically the covering
-algorithm is greedy in the sense that each iteration adds the best clause
-according to some local evaluation criterion. Some typical problems of the
-covering algorithm are: unnecessarily long hypotheses, difficulties in handling
-recursion, difficulties in learning multiple predicates. This paper investigates a
-non-covering approach to ILP, implemented as a Prolog program called
-HYPER, whose goals were: use intensional background knowledge, handle
-recursion well, and enable multi-predicate learning. Experimental results in this
-paper may appear surprising in the view of the very high combinatorial
-complexity of the search space associated with the non-covering approach.
+Abstract
+Most
+systems
+employ
+covering
+algorithm
+whereby
+hypotheses
+constructed
+iteratively
+clause
+clause
+Typically
+covering
+algorithm
+greedy
+sense
+that
+each
+iteration
+adds
+best
+clause
+according
+some
+local
+evaluation
+criterion
+Some
+typical
+problems
+covering
+algorithm
+unnecessarily
+long
+hypotheses
+difficulties
+handling
+recursion
+difficulties
+learning
+multiple
+predicates
+This
+paper
+investigates
+non-covering
+approach
+implemented
+Prolog
+program
+called
+HYPER
+whose
+goals
+were
+intensional
+background
+knowledge
+handle
+recursion
+well
+enable
+multi-predicate
+learning
+Experimental
+results
+this
+paper
+appear
+surprising
+view
+very
+high
+combinatorial
+complexity
+search
+space
+associated
+with
+non-covering
+approach
 References
-
-1.	Bratko, I., Grobelnik, M. (1993) Inductive learning applied to program
-construction and verification. Proc. ILP Workshop 93, Bled, Slovenia.
-2.	Grobelnik, M. (1992) Markus — an optimised model inference system. Proc. ECAI
-Workshop on Logical Approaches to Machine Learning, Vienna.
-3.	Muggleton, S. (1995) Inverse entailment and Progol. New Generation Computing,
-13 (1995), 245-286.
-4.	Pompe, U. (1998) Constraint Inductive Logic Programming. Ph.D. Thesis,
-University of Ljubljana, Faculty of Computer and Info. Sc. (In Slovenian).
-5.	Quinlan, J.R. (1990) Learning logical definitions from relations. Machine
-Learning, 5 (1990), 239-266.
+Bratko
+Grobelnik
+1993
+Inductive
+learning
+applied
+program
+construction
+verification
+Proc
+Workshop
+Bled
+Slovenia
+Grobelnik
+1992
+Markus
+optimised
+model
+inference
+system
+Proc
+ECAI
+Workshop
+Logical
+Approaches
+Machine
+Learning
+Vienna
+Muggleton
+1995
+Inverse
+entailment
+Progol
+Generation
+Computing
+1995
+245-286
+Pompe
+1998
+Constraint
+Inductive
+Logic
+Programming
+Ph.D
+Thesis
+University
+Ljubljana
+Faculty
+Computer
+Info
+Slovenian
+Quinlan
+1990
+Learning
+logical
+definitions
+from
+relations
+Machine
+Learning
+1990
+239-266

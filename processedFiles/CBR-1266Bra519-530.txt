@@ -1,57 +1,267 @@
-Stratified Case-Based Reasoning in
-Non-Refinable Abstraction Hierarchies
-
-L. Karl Branting
-
-Department of Computer Science
-University of Wyoming
-P.O. Box 3682
-Laramie, WY 82071
+Stratified
+Case-Based
+Reasoning
+Non-Refinable
+Abstraction
+Hierarchies
+Karl
+Branting
+Department
+Computer
+Science
+University
+Wyoming
+3682
+Laramie
+82071
 karb@index.uwyo.edu
-(307) 766-4258 / FAX: -4036
-
-
-Abstract. Stratified case-based reasoning (SCBR) is a technique in which
-case abstractions are used to assist case retrieval, matching, and adaptation. 
-Previous work showed that SCBR can significantly decrease the
-computational expense required for retrieval, matching, and adaptation
-in a route-finding domain characterized by abstraction hierarchies with
-the downward refinement property. This work explores the effectiveness
-of SCBR in hierarchies without the downward refinement property. In
-an experimental evaluation using such hierarchies (1) ScnR significantly
-decreased search cost in hierarchies without the downward refinement
-property, although the speedup over ground-level A* was not as great as
-in refinable hierarchies, (2) little difference was observed in SCBR search
-costs between case libraries created top-down in the process of REFINEMENT 
-and those created bottom-up from a valid ground solution, and
-(3) the most important factor in determining speedup appeared to be
-a priori likelihood that a previous solution can be usefully applied to a
-new problem.
+766-4258
+4036
+Abstract
+Stratified
+case-based
+reasoning
+SCBR
+technique
+which
+case
+abstractions
+used
+assist
+case
+retrieval
+matching
+adaptation
+Previous
+work
+showed
+that
+SCBR
+significantly
+decrease
+computational
+expense
+required
+retrieval
+matching
+adaptation
+route-finding
+domain
+characterized
+abstraction
+hierarchies
+with
+downward
+refinement
+property
+This
+work
+explores
+effectiveness
+SCBR
+hierarchies
+without
+downward
+refinement
+property
+experimental
+evaluation
+using
+such
+hierarchies
+ScnR
+significantly
+decreased
+search
+cost
+hierarchies
+without
+downward
+refinement
+property
+although
+speedup
+over
+ground-level
+great
+refinable
+hierarchies
+little
+difference
+observed
+SCBR
+search
+costs
+between
+case
+libraries
+created
+top-down
+process
+REFINEMENT
+those
+created
+bottom-up
+from
+valid
+ground
+solution
+most
+important
+factor
+determining
+speedup
+appeared
+priori
+likelihood
+that
+previous
+solution
+usefully
+applied
+problem
 References
-
-[BA95]	K. Branting and D. Aba. Stratified case-based reasoning: Reusing hierarchical 
-problem solving episodes. In Proceedings of the Fourteenth International 
-Joint Conference on Artificial Intelligence(IJCAI-95), Montreal,
-Canada, August 20—25 1995.
-[BW95]	R. Bergmann and W. Wilke. Building and refining abstract planning cases
-by change of representation language. Journal of Artificial Intelligence
-Research, 3(53—118), 1995.
-[BW96]	R. Bergmann and W. Wilke. On the role of abstraction in case-based reasoning. 
-In Proceedings of the Third European Workshop on Case-Based
-Reasoning (EWCR-96), pages 28—43, Lausanne, Switzerland, November
-1996.
-[BY94]	F. Bacchus and Q. Yang. Downward refinement and the efficiency of hierarchical 
-problem solving. Artificial Intelligence, 71:43—100, 1994.
-[HMZM96]	R. Holte, T. Mkadmi, R. Zimmer, and A. MacDonald. Speeding up
-problem-solving by abstraction: A graph-oriented approach. Artificial Intelligence, 
-85(1—2):321—362, 1996.
-[KH92]	S. Khambamppati and J. Hendler. A validation-structure-based theory of
-plan modification. Artificial Intelligence, 55:193—258, 1992.
-[Kno94]	C. Knoblock. Automatically generating abstractions for planning. Artificial 
-Intelligence, 64, 1994.
-[SC92]	B. Smyth and P. Cunningham. Deja vu: A hierarchical case-based reasoning 
-system for software design. In Proceedings of the 10th European Conference 
-on Artificial Intelligence, pages 587—589, Vienna, Austria, 1992.
-[SK94]	B. Smythe and M. Keane. Retrieving adaptable cases. In S. Wess,
-K. Althogg, and M. Richter, editors, Topics in Case-Based Reasoning,
-pages 209—220. Springer, 1994.
+BA95
+Branting
+Stratified
+case-based
+reasoning
+Reusing
+hierarchical
+problem
+solving
+episodes
+Proceedings
+Fourteenth
+International
+Joint
+Conference
+Artificial
+Intelligence(IJCAI-95
+Montreal
+Canada
+August
+20—25
+1995
+BW95
+Bergmann
+Wilke
+Building
+refining
+abstract
+planning
+cases
+change
+representation
+language
+Journal
+Artificial
+Intelligence
+Research
+3(53—118
+1995
+BW96
+Bergmann
+Wilke
+role
+abstraction
+case-based
+reasoning
+Proceedings
+Third
+European
+Workshop
+Case-Based
+Reasoning
+EWCR-96
+pages
+28—43
+Lausanne
+Switzerland
+November
+1996
+BY94
+Bacchus
+Yang
+Downward
+refinement
+efficiency
+hierarchical
+problem
+solving
+Artificial
+Intelligence
+71:43—100
+1994
+HMZM96
+Holte
+Mkadmi
+Zimmer
+MacDonald
+Speeding
+problem-solving
+abstraction
+graph-oriented
+approach
+Artificial
+Intelligence
+85(1—2):321—362
+1996
+KH92
+Khambamppati
+Hendler
+validation-structure-based
+theory
+plan
+modification
+Artificial
+Intelligence
+55:193—258
+1992
+Kno94
+Knoblock
+Automatically
+generating
+abstractions
+planning
+Artificial
+Intelligence
+1994
+SC92
+Smyth
+Cunningham
+Deja
+hierarchical
+case-based
+reasoning
+system
+software
+design
+Proceedings
+10th
+European
+Conference
+Artificial
+Intelligence
+pages
+587—589
+Vienna
+Austria
+1992
+SK94
+Smythe
+Keane
+Retrieving
+adaptable
+cases
+Wess
+Althogg
+Richter
+editors
+Topics
+Case-Based
+Reasoning
+pages
+209—220
+Springer
+1994

@@ -1,65 +1,314 @@
-Semi­automatic Acquisition of Machine
-Translation Knowledge from Examples
-
-Fuji REN
-Institute of Information science ,
-Hiroshima City University,
-3­4­1, Ozuka­Higasi,Asa­Minami­Ku,Hiroshima,
-731­31, Japan
+Semi­automatic
+Acquisition
+Machine
+Translation
+Knowledge
+from
+Examples
+Fuji
+Institute
+Information
+science
+Hiroshima
+City
+University
+3­4­1
+Ozuka­Higasi,Asa­Minami­Ku,Hiroshima
+731­31
+Japan
 ren@its.hiroshima­cu.ac.jp
-Lixin Fan
-Digital Express Corporation
-3­601, Ozuka­Nisi 6­14, Asa­Minami­Ku, Hiroshima,
-731­31, Japan
-Jian­Yun NIE
-DIRO, Universitй de Montrйal
-C.P. 6128, succ. centre­vile, Quйbec,
-H3C 3J7 Canada
+Lixin
+Digital
+Express
+Corporation
+3­601
+Ozuka­Nisi
+6­14
+Asa­Minami­Ku
+Hiroshima
+731­31
+Japan
+Jian­Yun
+DIRO
+Universitй
+Montrйal
+6128
+succ
+centre­vile
+Quйbec
+Canada
 nie@iro.umontreal.ca
-Youliang JIAN
-Computer Institute,
-Dalian University of Technology
-116023, Dalian, China
+Youliang
+JIAN
+Computer
+Institute
+Dalian
+University
+Technology
+116023
+Dalian
+China
 newyou@dlut.edu.cn
-
 Abstract
-A crucial problem in rule­based machine translation is the acquisition of translation knowledge. Many
-studies have been conducted for automatic acquisition in the past, but they require a great deal of
-annotated examples. In this paper, we describe a semi­automatic acquisition from translation examples in
-Japanese­Chinese environment. Whenever necessary, the process interacts with a user (a linguist) who
-will provides additional information and constraints for generalizing the translation examples. The semi­-automatic 
-approach is more efficient in the sense that less examples are required than automatic
-approaches. Once the acquired knowledge is integrated with an MT system, we observe an improvement
-in translation quality.
-
+crucial
+problem
+rule­based
+machine
+translation
+acquisition
+translation
+knowledge
+Many
+studies
+have
+been
+conducted
+automatic
+acquisition
+past
+they
+require
+great
+deal
+annotated
+examples
+this
+paper
+describe
+semi­automatic
+acquisition
+from
+translation
+examples
+Japanese­Chinese
+environment
+Whenever
+necessary
+process
+interacts
+with
+user
+linguist
+will
+provides
+additional
+information
+constraints
+generalizing
+translation
+examples
+semi­-automatic
+approach
+more
+efficient
+sense
+that
+less
+examples
+required
+than
+automatic
+approaches
+Once
+acquired
+knowledge
+integrated
+with
+system
+observe
+improvement
+translation
+quality
 References
-Dagan, I., Church, K. (1997) Termight: Coordinating humans and machine in bilingual terminology
-acquisition, Machine Translation, 12/1­2, pp. 89­107.
-Fung, P., McKeown, K. (1997) A technical word­ and term­translation aid using noisy parallel corpora
-across language groups, Machine Translation, 12/1­2, pp. 53­87.
-Furuse, O. and Iida, H. (1992) An Example­based Method for Transfer­Driven Machine Translation,
-Proc. TMI­92, pp. 139­150.
-Jian Y., Chang H., Wang X., Huang D. (1997) A Japanese parser using dependence relation, Language
-Engineering, pp. 258­265.
-Kaji, H., Kida, Y. and Morimoto, Y. (1992) Learning Translation Templates from Bilingual Text, Proc.
-COLING­92, pp. 672­678.
-Kay, M. (1997) The proper place of men and machine in language translation, Machine Translation,
-12/1­2, pp. 3­23.
-Kitamura, M. and Matsumoto, Y. (1996) Automatic Acquisition of Translation Rules from Parallel
-Corpora, Transactions of IPSJ, 37 / 6, pp. 1030­1040.
-Langй, J.­M., Gaussier, Й., Daille, B. (1997) Bricks and skeletons: Some ideas for the near future of
-MAHT, Machine Translation, 12/1­2, pp. 39­51.
-Ren F. (1996), SWKJC Machine Translation System Based on Translation Rules Acquired from
-Corpora, Technique Report of Hiroshima City University,Technique Report of Hiroshima City
-University,HCU­IS­96­004, pp.1­31.
-Sato, S. (1995) MBT2: A Method for Combining Fragments of Examples in Example­based Translation,
-Artificial Intelligence, 75, pp. 31­49.
-Sun, M. (1994) Chinese syntactic analysis using a multiple pass, deterministic algorithm and its
-application in text understanding, Proceedings of Processing of Linguistic Information, pp. 103­168
-Watanabe, H. (1993) A Method for Extracting Translation Patterns from Translation Examples, Proc.
-TMI­93, pp. 292­301.
-Yu, S. (1995) A hypothesis about restricted regular Chinese, Proceedings of Chinese modernization, pp.
+Dagan
+Church
+1997
+Termight
+Coordinating
+humans
+machine
+bilingual
+terminology
+acquisition
+Machine
+Translation
+12/1­2
+89­107
+Fung
+McKeown
+1997
+technical
+word­
+term­translation
+using
+noisy
+parallel
+corpora
+across
+language
+groups
+Machine
+Translation
+12/1­2
+53­87
+Furuse
+Iida
+1992
+Example­based
+Method
+Transfer­Driven
+Machine
+Translation
+Proc
+TMI­92
+139­150
+Jian
+Chang
+Wang
+Huang
+1997
+Japanese
+parser
+using
+dependence
+relation
+Language
+Engineering
+258­265
+Kaji
+Kida
+Morimoto
+1992
+Learning
+Translation
+Templates
+from
+Bilingual
+Text
+Proc
+COLING­92
+672­678
+1997
+proper
+place
+machine
+language
+translation
+Machine
+Translation
+12/1­2
+3­23
+Kitamura
+Matsumoto
+1996
+Automatic
+Acquisition
+Translation
+Rules
+from
+Parallel
+Corpora
+Transactions
+IPSJ
+1030­1040
+Langй
+J.­M
+Gaussier
+Daille
+1997
+Bricks
+skeletons
+Some
+ideas
+near
+future
+MAHT
+Machine
+Translation
+12/1­2
+39­51
+1996
+SWKJC
+Machine
+Translation
+System
+Based
+Translation
+Rules
+Acquired
+from
+Corpora
+Technique
+Report
+Hiroshima
+City
+University,Technique
+Report
+Hiroshima
+City
+University,HCU­IS­96­004
+pp.1­31
+Sato
+1995
+MBT2
+Method
+Combining
+Fragments
+Examples
+Example­based
+Translation
+Artificial
+Intelligence
+31­49
+1994
+Chinese
+syntactic
+analysis
+using
+multiple
+pass
+deterministic
+algorithm
+application
+text
+understanding
+Proceedings
+Processing
+Linguistic
+Information
+103­168
+Watanabe
+1993
+Method
+Extracting
+Translation
+Patterns
+from
+Translation
+Examples
+Proc
+TMI­93
+292­301
+1995
+hypothesis
+about
+restricted
+regular
+Chinese
+Proceedings
+Chinese
+modernization
 193­205
-Zajac, R., Vanni, M. (1997) Glossary­based MT engines in a multilingual analyst's workstation
-architecture, Machine Translation, 12/1­2, pp. 131­151.
-
+Zajac
+Vanni
+1997
+Glossary­based
+engines
+multilingual
+analyst's
+workstation
+architecture
+Machine
+Translation
+12/1­2
+131­151
