@@ -23,4 +23,5 @@ class NaiveBayes():
 		p_il = self.probability_of_class('il', bag_of_words, class_distribuition)
 		p_pir = self.probability_of_class('pir', bag_of_words, class_distribuition)
 
-		return max([p_cbr, p_il, p_pir])
+		p = [p_cbr, p_il, p_pir]
+		return p.index(max(p))
