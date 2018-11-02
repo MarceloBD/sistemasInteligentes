@@ -4,6 +4,7 @@ class NaiveBayes():
 
 	def __init__(self, dictionary_of_classes):
 		self.dictionary_of_classes = dictionary_of_classes
+		self.count_words = self.count_words()
 		return
 
 	def laplace(self, frequency_attribute_in_class, number_total_attributes_in_class, number_of_possibilities):
@@ -20,21 +21,24 @@ class NaiveBayes():
 		return p_class*p_mul_attribute
 
 	def conditional_probability(self, attribute, class_label):
-		#TODO: get conditional probability from all data  
-		# and case when is needed to use laplace smoothing
-		counted_attribute = self.count_attribute(attribute, class_label)
-		counted_words = self.count_words(class_label)
-		return count_attribute/count_words
+		#TODO: 
+		#  use laplace smoothing
+		counted_attribute = self.dictionary_of_classes[class_label][attribute]
+		return count_attribute/self.counted_words[class_label]
 
-	def count_words(self, class_label):
-
+	def count_words(self):
+		count_words = {}
+		counted_words['cbr'] = sum(self.dictionary_of_classes['cbr'].values())
+		counted_words['ilp'] = sum(self.dictionary_of_classes['ilp'].values())
+		counted_words['ir'] = sum(self.dictionary_of_classes['ir'].values())
+		return count_words
 
 	def classify(self, bag_of_words, class_distribuition):
 		p_cbr = self.probability_of_class('cbr', bag_of_words, class_distribuition)
-		p_il = self.probability_of_class('il', bag_of_words, class_distribuition)
-		p_pir = self.probability_of_class('pir', bag_of_words, class_distribuition)
+		p_ilp = self.probability_of_class('ilp', bag_of_words, class_distribuition)
+		p_ir = self.probability_of_class('ir', bag_of_words, class_distribuition)
 
-		p = [p_cbr, p_il, p_pir]
+		p = [p_cbr, p_ilp, p_ir]
 		return p.index(max(p))
 
 

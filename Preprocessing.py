@@ -8,7 +8,7 @@ class Preprocessing():
 	def __init__(self):
 		self.dictionary = {'cbr':{},
 							'ilp':{},
-							'ir':{}}
+							'ri':{}}
 		return
 
 	def convert_all_files(self):
@@ -47,7 +47,7 @@ class Preprocessing():
 		 else:
 		 	try:
 		 		for key in bag_of_words:	
-		 			self.dictionary['ir'][key] = self.dictionary['ir'].get(key, 0) + bag_of_words.get(key)
+		 			self.dictionary['ri'][key] = self.dictionary['ri'].get(key, 0) + bag_of_words.get(key)
 		 	except:
 		 		pass
 
@@ -105,4 +105,4 @@ class Preprocessing():
 		print('----------------------------------------------------------')
 		[print(item) for item in sorted(self.dictionary['ilp'].items())]
 		print('----------------------------------------------------------')
-		[print(item) for item in sorted(self.dictionary['ir'].items())]
+		[print(item) for item in sorted(self.dictionary['ri'].items())]
