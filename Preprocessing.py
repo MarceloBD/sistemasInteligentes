@@ -61,19 +61,18 @@ class Preprocessing():
 	def make_bag_of_words(self, read_words):
 		words = []
 		frequencies = []
-		
-		
+		word_freq = {}
+
 		while(len(read_words) > 0):
 			actual_word = read_words[0]
-			words.append(actual_word)
+			word_freq[actual_word] = 1	
 			read_words.remove(actual_word)
-			frequencies.append(1)
+
 			for another_word in read_words:
 				if(another_word == actual_word):
-					frequencies[-1] += 1
+					word_freq[actual_word] += 1
 					read_words.remove(actual_word)
-		for i in range(len(words)):
-			print(words[i], frequencies[i]) 
+		print(word_freq) 
 
 
 
