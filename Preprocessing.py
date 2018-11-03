@@ -78,7 +78,9 @@ class Preprocessing():
 
 	def remove_terminal_ponctuation(self, words):
 		words = [word.rstrip(string.punctuation) for word in words]
+		words = [word.rstrip(string.punctuation) for word in words]
 		words = [word[::-1].rstrip(string.punctuation) for word in words]
+		words = [word.rstrip(string.punctuation) for word in words]
 		return [word[::-1] for word in words]
 
 	def delete_lower_than(self, words, length):
@@ -113,6 +115,10 @@ class Preprocessing():
 		[print(item) for item in sorted(self.dictionary['ri'].items())]
 
 	def get_dictionary(self):
+		out = codecs.open('dictionary', 'w', 'utf-8')
+		out.write('\n'.join(self.dictionary['cbr']))
+		out.write('\n'.join(self.dictionary['ilp']))
+		out.write('\n'.join(self.dictionary['ri']))
 		return self.dictionary
 
 	def get_class_distribuition(self):

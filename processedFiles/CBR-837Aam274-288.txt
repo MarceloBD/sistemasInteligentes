@@ -198,7 +198,7 @@ Plaza
 Proc
 ECML-93
 Workshop
-“Integrated
+вЂњIntegrated
 Learning
 Architectures
 Vienna
@@ -416,7 +416,7 @@ Reflection
 memory
 learning
 Institut
-d’Investigacio
+dвЂ™Investigacio
 Intelligencia
 Artificial
 CSIC/CEAB
@@ -537,12 +537,12 @@ Magazine
 11(2
 1990
 29-49
-Sшlvberg
+SС€lvberg
 1992
 Ingeborg
-Sшlvberg
+SС€lvberg
 Inge
-Nordbш
+NordbС€
 Agnar
 Aamodt
 Knowledge-based
