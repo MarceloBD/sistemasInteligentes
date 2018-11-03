@@ -1,6 +1,6 @@
 Prolog
 Refinements
-RLGG’s
+RLGGвЂ™s
 Claude
 Sammut
 School
@@ -16,7 +16,7 @@ Australia
 claude@cse.unsv.edu.au
 http://vvv.cse.unsw.edu.au/~claude
 Abstract
-Cohen’s
+CohenвЂ™s
 refinement
 rules
 provide
@@ -99,7 +99,7 @@ Logic
 programming
 Press
 1996
-124—143
+124вЂ”143
 Muggleton
 Feng
 Efficient
@@ -121,7 +121,7 @@ Progol
 Generation
 Computing
 1995
-245—286
+245вЂ”286
 Page
 Frisch
 Generalization
@@ -136,7 +136,7 @@ Programming
 Academic
 Press
 1992
-29—61
+29вЂ”61
 Plotkin
 further
 note
@@ -193,7 +193,7 @@ Kaufmann
 Altos
 California
 1986
-167—192
+167вЂ”192
 Sammut
 Using
 background
@@ -204,7 +204,7 @@ learners
 Machine
 Learning
 1997
-241—257
+241вЂ”257
 Srinivasan
 Camacho
 Experiments
@@ -230,4 +230,4 @@ Artificial
 Intelligence
 10(1
 1997
-31—39
+31вЂ”39

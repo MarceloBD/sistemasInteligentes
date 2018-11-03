@@ -9,6 +9,9 @@ class Preprocessing():
 		self.dictionary = {'cbr':{},
 							'ilp':{},
 							'ri':{}}
+		self.class_distribuition = {'cbr': 0,
+							'ilp': 0,
+							'ri': 0} 
 		return
 
 	def convert_all_files(self):
@@ -27,11 +30,11 @@ class Preprocessing():
 		    
 		    bag_of_words = self.make_bag_of_words(words)
 		    self.make_dictionary(bag_of_words, new_filename)
-
-		    
+		return bag_of_words
 
 	def make_dictionary(self, bag_of_words, new_filename):
 		 if(new_filename[0:18] == 'processedFiles/CBR'):
+		 	self.class_distribuition['cbr'] += 1
 		 	try:
 		 		for key in bag_of_words:	
 		 			self.dictionary['cbr'][key] = self.dictionary['cbr'].get(key, 0) + bag_of_words.get(key)
@@ -39,12 +42,14 @@ class Preprocessing():
 		 	except:
 		 		pass
 		 elif(new_filename[0:18] == 'processedFiles/ILP'):
+		 	self.class_distribuition['ilp'] += 1
 		 	try:
 			 	for key in bag_of_words:	
 			 		self.dictionary['ilp'][key] = self.dictionary['ilp'].get(key, 0) + bag_of_words.get(key)
 		 	except:
 		 		pass
 		 else:
+		 	self.class_distribuition['ri'] += 1
 		 	try:
 		 		for key in bag_of_words:	
 		 			self.dictionary['ri'][key] = self.dictionary['ri'].get(key, 0) + bag_of_words.get(key)
@@ -106,3 +111,9 @@ class Preprocessing():
 		[print(item) for item in sorted(self.dictionary['ilp'].items())]
 		print('----------------------------------------------------------')
 		[print(item) for item in sorted(self.dictionary['ri'].items())]
+
+	def get_dictionary(self):
+		return self.dictionary
+
+	def get_class_distribuition(self):
+		return self.class_distribuition
