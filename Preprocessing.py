@@ -3,6 +3,8 @@ import string
 import glob
 import copy as cp
 
+MIN_WORD_LENGTH = 4
+
 class Preprocessing():
 
 	def __init__(self):
@@ -22,15 +24,21 @@ class Preprocessing():
 		new_filename = self.decode2utf8(filename)
 
 		with open(new_filename) as file:
-		    words = [word for line in file for word in line.split()]
-		    words = self.apply_filters(words)
-		    
+		    text = file.read()
+		    text = self.remove_undesired_chars(text)
+		    words = self.get_words(text, MIN_WORD_LENGTH)
+
 		    out = codecs.open(new_filename, 'w', 'utf-8')
 		    out.write('\n'.join(words))
 		    
 		    bag_of_words = self.make_bag_of_words(words)
 		    self.make_dictionary(bag_of_words, new_filename)
 		return bag_of_words
+
+	def get_words(self, text, min_length):
+		words = list(filter(lambda x: len(x) >= min_length, text.split(' ')))
+		lowered_words = [word.lower() for word in words]
+		return lowered_words
 
 	def make_dictionary(self, bag_of_words, new_filename):
 		 if(new_filename[0:18] == 'processedFiles/CBR'):
@@ -57,12 +65,8 @@ class Preprocessing():
 		 		pass
 
 	def decode2utf8(self, filename):
-		file = codecs.open(filename, 'r', 'cp1251')
-		try:
-			raw = file.read() 
-		except:
-			file = codecs.open(filename, 'r', 'koi8-r')
-			raw = file.read() 
+		file = codecs.open(filename, 'r', encoding='utf-8' , errors='ignore')
+		raw = file.read() 
 		new_filename = cp.deepcopy(filename)
 		new_filename = new_filename.split('/')[1]
 		new_filename = 'processedFiles/' + new_filename
@@ -70,27 +74,16 @@ class Preprocessing():
 		outFile.write(raw) 
 		return new_filename
 
-	def apply_filters(self, words):
-		words = self.remove_terminal_ponctuation(words)
-		words = list(filter(None, words)) 
-		words = self.delete_lower_than(words, 4)
+
+	def remove_undesired_chars(self, words):
+		undesired_chars = ['\n', '(', ')', '[', ']', '.', ',', '"', "'",":", 
+ 		";", "\x0c", "\x0f", '\r', '\t', '-', '/', '0', '1', '2', 
+    	'3', '4', '5', '6', '7', '8', '9', '{', '}', '@', '=',
+    	'+', '"\"', '#', '\x18', '`', '*', '?','~','<','>',"\\"]
+		for char in undesired_chars:
+			words = words.replace(char, ' ')
 		return words
 
-	def remove_terminal_ponctuation(self, words):
-		words = [word.rstrip(string.punctuation) for word in words]
-		words = [word.rstrip(string.punctuation) for word in words]
-		words = [word[::-1].rstrip(string.punctuation) for word in words]
-		words = [word.rstrip(string.punctuation) for word in words]
-		return [word[::-1] for word in words]
-
-	def delete_lower_than(self, words, length):
-		remove = []
-		for i in range(len(words)):
-			if(len(words[i]) < 4):
-				remove.append(words[i])
-		for i in range(len(remove)):
-				words.remove(remove[i])
-		return words
 
 	def make_bag_of_words(self, read_words):
 		word_freq = {}
@@ -123,3 +116,6 @@ class Preprocessing():
 
 	def get_class_distribuition(self):
 		return self.class_distribuition
+
+
+
