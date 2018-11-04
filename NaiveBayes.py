@@ -1,4 +1,5 @@
 # reference https://web.stanford.edu/class/cs124/lec/naivebayes.pdf
+import numpy as np 
 
 class NaiveBayes():
 
@@ -31,15 +32,15 @@ class NaiveBayes():
 		# frequency attribute in class = number of times the word appears in class 
 		# number of possibilities = vocabulary 
 		# number total attributes in class = number of words in class 
-		return (frequency_attribute_in_class + 1)/(number_total_attributes_in_class + number_of_possibilities)
+		return np.log((frequency_attribute_in_class + 1)/(number_total_attributes_in_class + number_of_possibilities))
 
 	def probability_of_class(self, class_label, bag_of_words):
 		p_class = self.class_distribuition[class_label]
-		p_mul_attribute = 1
+		p_mul_attribute = 0
 		for attribute in bag_of_words:
-			p_mul_attribute *= self.conditional_probability[class_label][attribute]
+			p_mul_attribute += self.conditional_probability[class_label][attribute]
 		
-		return p_class*p_mul_attribute
+		return np.log(p_class)+p_mul_attribute
 
 	#def conditional_probability(self, attribute, class_label):
 	#	counted_attribute = self.dictionary_of_classes[class_label][attribute]
@@ -58,4 +59,5 @@ class NaiveBayes():
 		p_ir = self.probability_of_class('ri', bag_of_words)
 
 		p = [p_cbr, p_ilp, p_ir]
+		print(p)
 		return p.index(max(p))
