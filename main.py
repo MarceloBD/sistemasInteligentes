@@ -2,6 +2,7 @@ from os import listdir
 from os.path import isfile, join
 import codecs
 from itertools import groupby
+import numpy as np
 
 FILES_PATH = "./files"
 MIN_WORD_LENGTH = 4
@@ -27,7 +28,11 @@ def remove_undesired_chars(text):
     undesired_chars = ['\n', '(', ')', '[', ']', '.', ',', '"', "'",
             ":", ";", "\x0c", "\x0f", '\r', '\t', '-', '/', '0', '1', '2', 
             '3', '4', '5', '6', '7', '8', '9', '{', '}', '@', '=',
-            '+', '"\"', '#', '\x18', '`', '*', '?']
+            '+', '"\"', '#', '\x18', '`', '*', '?', '<', '>', '_', '!',
+            '\bad', '\boosting', '\communication', '\gamma', '\good',
+            '\lambda', '\omega', '\gamma', '\phi', '\phil', '\station',
+            '\seed', '\sigma', '\weak', '\yes', '%', '', '', '',
+            '~', '^']
     for char in undesired_chars:
         text = text.replace(char, ' ')
     return text
@@ -78,6 +83,24 @@ def make_vocabulary(bag_of_words):
     vocabulary_list = []
     for word in vocabulary_dict:
         vocabulary_list.append(word)
+    vocabulary_list.sort()
+    #Gamb
+    vocabulary_list = vocabulary_list[8:]
+    return vocabulary_list
+
+def make_class_vocabulary(bag_of_words, classname):
+    vocabulary_dict = {}
+    for doc_name in bag_of_words:
+        doc = bag_of_words[doc_name]
+        if doc['class'] == classname:
+            for word in doc['words']:
+                vocabulary_dict[word] = True
+    vocabulary_list = []
+    for word in vocabulary_dict:
+        vocabulary_list.append(word)
+    vocabulary_list.sort()
+    #Gamb
+    vocabulary_list = vocabulary_list[8:]
     return vocabulary_list
 
 def get_all_classes(bag_of_words):
@@ -120,6 +143,96 @@ def make_folds(bag_of_words, size):
     return folds
 
 
+def generate_arff(bag_of_words, vocabulary):
+    with open("data.arff", "w") as file:
+        file.write("@RELATION texts\n\n")
+        for word in vocabulary:
+            file.write("@ATTRIBUTE " + word + " NUMERIC\n")
+        file.write("@ATTRIBUTE _class {CBR,ILP,RI}\n\n")
+
+
+        file.write("@DATA\n")
+        for filename in bag_of_words:
+            line = ""
+            doc = bag_of_words[filename]
+            for word in vocabulary:
+                line = line + str(doc['words'].get(word, 0)) + ','
+            line = line + doc['class'] + '\n'
+            file.write(line)
+        file.close()
+
+def get_classes_occurrencies(bag_of_words):
+    classes = get_all_classes(bag_of_words)
+    occurrencies = {}
+    for classname in classes:
+        occurrencies[classname] = 0
+    for filename in bag_of_words:
+        doc = bag_of_words[filename]
+        occurrencies[doc['class']] += 1
+    return occurrencies
+
+def make_bag_of_words_by_class(bag_of_words):
+    classes = get_all_classes(bag_of_words)
+    bow_class = {} 
+    for cname in classes:
+        bow_class[cname] = {}
+    for filename in bag_of_words:
+        doc = bag_of_words[filename]
+        for word in doc['words']:
+            bow_class[doc['class']][word] = bow_class[doc['class']].get(word,0) + doc['words'][word]
+    return bow_class
+
+
+def get_probabilities(bag_of_words):
+    vocabulary = make_vocabulary(bag_of_words)
+    class_occurrencies = get_classes_occurrencies(bag_of_words)
+    classes = get_all_classes(bag_of_words)
+    class_vocabulary = {}
+    class_probability = {}
+    probability_word_given_class = {}
+    bag_of_words_by_class = make_bag_of_words_by_class(bag_of_words)
+    for classname in classes:
+        probability_word_given_class[classname] = {}
+        class_vocabulary[classname] = make_class_vocabulary(bag_of_words, classname)
+        class_probability[classname] = class_occurrencies[classname] / len(bag_of_words)
+        for word in vocabulary:
+            word_occurrencies = bag_of_words_by_class[classname].get(word, 0)
+            probability_word_given_class[classname][word] = (word_occurrencies + 1)/(len(vocabulary) + len(bag_of_words_by_class[classname]))
+    return class_probability, probability_word_given_class
+
+
+    
+def classify(filename, bag_of_words, class_probability, probability_word_given_class):
+    bag_of_words = make_bag_of_words(FILES_PATH, MIN_WORD_LENGTH)
+    bag_of_words_by_class = make_bag_of_words_by_class(bag_of_words)
+    vocabulary = make_vocabulary(bag_of_words)
+    #generate_arff(bag_of_words, vocabulary)
+    classes = get_all_classes(bag_of_words)
+    probabilities = []
+    for classname in classes:
+        class_vocabulary = make_class_vocabulary(bag_of_words, classname)
+        aux = 0
+        for word in bag_of_words[filename]['words']:
+            p_word = probability_word_given_class[classname].get(word, 1 / (len(vocabulary) + len(bag_of_words_by_class[classname])))
+            aux += np.log10(p_word)
+        probabilities.append(np.log10(class_probability[classname]) + aux)
+    return classes[probabilities.index(max(probabilities))]
+
+
 
 bag_of_words = make_bag_of_words(FILES_PATH, MIN_WORD_LENGTH)
 folds = make_folds(bag_of_words, 10)
+guessed_right = 0
+guessed_wrong = 0
+for fold in folds:
+    class_probability, probability_word_given_class = get_probabilities(fold['training'])
+    for filename in fold['testing']:
+        print("text: " + filename)
+        result = classify(filename, fold['testing'], class_probability, probability_word_given_class)
+        if result == fold['testing'][filename]['class']:
+            guessed_right += 1
+        else:
+            guessed_wrong += 1
+        print("guessed: " + result)
+        print(f"Right: {guessed_right}, wrong: {guessed_wrong}, precision: {guessed_right/(guessed_right+guessed_wrong)}")
+
